@@ -2,7 +2,7 @@
 
 ## RewardsController
 
-All rewards type enabled in Aave V3 are managed by [RewardsDistributor.sol](https://github.com/aave/aave-v3-periphery/blob/master/contracts/rewards/RewardsDistributor.sol). This is the contract used to check rewards data, user’s rewards balance and for claiming the rewards.
+All rewards type enabled in Spark Protocol are managed by [RewardsDistributor.sol](https://github.com/spark-protocol/spark-protocol-periphery/blob/master/contracts/rewards/RewardsDistributor.sol). This is the contract used to check rewards data, user’s rewards balance and for claiming the rewards.
 
 ## Structs
 
@@ -81,7 +81,7 @@ Call Params
 | assets | address\[] | address list of assets for which rewards are being claimed. Pass a/s/vToken addresses      |
 | amount | uint256    | amount to claim, expressed in wei. Pass MAX\_UINT to claim entire unclaimed reward balance |
 | to     | address    | address which will receive the reward tokens                                               |
-| reward | address    | address of the reward token being claimed. eg. stkAaave                                    |
+| reward | address    | address of the reward token being claimed. eg. stkSpark                                    |
 
 ### claimRewardsOnBehalf
 
@@ -101,7 +101,7 @@ Call Params
 | amount | uint256    | amount to claim, expressed in wei. Pass MAX\_UINT to claim entire unclaimed reward balance |
 | user   | address    | address of user who’s rewards are being claimed                                            |
 | to     | address    | address which will receive the reward tokens                                               |
-| reward | address    | address of the reward token being claimed. eg. stkAaave                                    |
+| reward | address    | address of the reward token being claimed. eg. stkSpark                                    |
 
 ### claimRewardsToSelf
 
@@ -115,7 +115,7 @@ Call Params
 | ------ | ---------- | ------------------------------------------------------------------------------------------ |
 | assets | address\[] | address list of assets for which rewards are being claimed. Pass a/s/vToken addresses      |
 | amount | uint256    | amount to claim, expressed in wei. Pass MAX\_UINT to claim entire unclaimed reward balance |
-| reward | address    | address of the reward token being claimed. eg. stkAaave                                    |
+| reward | address    | address of the reward token being claimed. eg. stkSpark                                    |
 
 ### claimAllRewards
 
@@ -146,7 +146,7 @@ Call Params
 | ------ | ---------- | ------------------------------------------------------------------------------------- |
 | assets | address\[] | address list of assets for which rewards are being claimed. Pass a/s/vToken addresses |
 | user   | address    | address of user who’s rewards are being claimed                                       |
-| reward | address    | address of the reward token being claimed. eg. stkAaave                               |
+| reward | address    | address of the reward token being claimed. eg. stkSpark                               |
 
 ### claimAllRewardsToSelf
 

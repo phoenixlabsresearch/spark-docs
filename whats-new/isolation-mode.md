@@ -1,6 +1,6 @@
 # Isolation Mode
 
-Isolation mode allows to list new assets as _**Isolated**_ which has a specific debt ceiling and can be only used to borrow stablecoins that have been permitted, by Aave Governance, to be borrowable in isolation mode.
+Isolation mode allows to list new assets as _**Isolated**_ which has a specific debt ceiling and can be only used to borrow stablecoins that have been permitted, by Maker Governance, to be borrowable in isolation mode.
 
 {% hint style="info" %}
 Debt Ceiling for an \*Isolated Asset\* is represented as the maximum amount in USD that can be borrowed against the collateral with two decimals of precision.

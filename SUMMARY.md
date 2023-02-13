@@ -2,12 +2,11 @@
 
 ## Getting Started
 
-* [V3 Overview](README.md)
+* [Spark Protocol Overview](README.md)
 * [Contracts Overview](getting-started/contracts-overview.md)
 * [L2 Optimization](getting-started/l2-optimization/README.md)
   * [L2Pool](getting-started/l2-optimization/l2pool.md)
   * [L2Encoder](getting-started/l2-optimization/l2encoder.md)
-* [V3 Whitepaper](https://github.com/aave/aave-v3-core/blob/master/techpaper/Aave\_V3\_Technical\_Paper.pdf)
 * [Protocol Features Summary](getting-started/protocol-feature-summary.md)
 
 ## What's New?
@@ -60,8 +59,8 @@
 
 ## Deployed Contracts
 
-* [V3 Testnet Addresses](deployed-contracts/v3-testnet-addresses.md)
-* [V3 Mainnet](deployed-contracts/v3-mainnet/README.md)
+* [Spark Protocol Testnet Addresses](deployed-contracts/v3-testnet-addresses.md)
+* [Spark Protocol Mainnet](deployed-contracts/v3-mainnet/README.md)
   * [Optimism](deployed-contracts/v3-mainnet/optimism.md)
   * [Arbitrum](deployed-contracts/v3-mainnet/arbitrum.md)
   * [Polygon](deployed-contracts/v3-mainnet/polygon.md)

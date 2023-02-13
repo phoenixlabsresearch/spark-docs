@@ -62,11 +62,11 @@ Get the domain separator for the token at current chain.
 Returns the nonce value for address specified as parameter. This is the nonce used when calling `permit()`
 
 ```jsx
-const token = new Contract(aTokenAddres, aToken.abi, provider);
+const token = new Contract(spTokenAddres, spToken.abi, provider);
 await token.nonces(user);
 ```
 
-## Aave Protocol Specific Methods
+## Spark Protocol Specific Methods
 
 ### Shared View Methods
 
@@ -112,12 +112,12 @@ Sets the `value` of allowance for `delegatee` to borrow of a particular debt tok
 
 #### setIncentivesController
 
-`function setIncentivesController(IAaveIncentivesController controller)`
+`function setIncentivesController(ISparkIncentivesController controller)`
 
 Sets a new Incentives Controller.
 
 {% hint style="danger" %}
-Only Pool Admin can call this methods. To update Incentives Controller on main Aave market, Governance Proposal must be submitted.
+Only Pool Admin can call this methods. To update Incentives Controller on main Spark market, Governance Proposal must be submitted.
 {% endhint %}
 
 ### Stable Debt Token Methods
