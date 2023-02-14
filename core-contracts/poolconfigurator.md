@@ -87,7 +87,7 @@ Call Params
 ### Only Pool Admin
 
 * dropReserve
-* updateAToken
+* updateSpToken
 * updateStableDebtToken
 * updateVariableDebtToken
 * activateReserve
@@ -124,7 +124,7 @@ Call Params
                 "type": "address"
             }
         ],
-        "name": "ATokenUpgraded",
+        "name": "SpTokenUpgraded",
         "type": "event"
     },
     {
@@ -484,7 +484,7 @@ Call Params
             {
                 "indexed": true,
                 "internalType": "address",
-                "name": "aToken",
+                "name": "spToken",
                 "type": "address"
             },
             {
@@ -757,7 +757,7 @@ Call Params
                 "components": [
                     {
                         "internalType": "address",
-                        "name": "aTokenImpl",
+                        "name": "spTokenImpl",
                         "type": "address"
                     },
                     {
@@ -797,12 +797,12 @@ Call Params
                     },
                     {
                         "internalType": "string",
-                        "name": "aTokenName",
+                        "name": "spTokenName",
                         "type": "string"
                     },
                     {
                         "internalType": "string",
-                        "name": "aTokenSymbol",
+                        "name": "spTokenSymbol",
                         "type": "string"
                     },
                     {
@@ -1215,12 +1215,12 @@ Call Params
                         "type": "bytes"
                     }
                 ],
-                "internalType": "struct ConfiguratorInputTypes.UpdateATokenInput",
+                "internalType": "struct ConfiguratorInputTypes.UpdateSpTokenInput",
                 "name": "input",
                 "type": "tuple"
             }
         ],
-        "name": "updateAToken",
+        "name": "updateSpToken",
         "outputs": [],
         "stateMutability": "nonpayable",
         "type": "function"

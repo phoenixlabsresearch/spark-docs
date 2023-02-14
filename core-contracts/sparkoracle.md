@@ -18,7 +18,7 @@ In the future we will have redundancy with multiple oracle providers.
 
 `function getAssetPrice(address asset)`
 
-Returns the price of the supported `asset` in `BASE_CURRENCY` of the Aave Market in wei.
+Returns the price of the supported `asset` in `BASE_CURRENCY` of the Spark Protocol Market in wei.
 
 Return Value
 

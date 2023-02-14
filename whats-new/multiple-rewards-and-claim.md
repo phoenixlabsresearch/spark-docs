@@ -2,7 +2,7 @@
 
 ## Multiple Rewards and Claim
 
-In Aave Protocol V2, Aave Governance activated liquidity mining rewards through a community proposal. While emissions of rewards differ per asset, the rewards were all denominated in `stkAave` tokens. Aave Protocol V3 offers option to have _**multiple rewards**_ per token. Now, it is possible for an asset listing to enable additional incentive rewards denominated in their protocol tokens.
+Spark Protocol offers option to have _**multiple rewards**_ per token. Now, it is possible for an asset listing to enable additional incentive rewards denominated in their protocol tokens.
 
 V3 also allows user to claim rewards to another account as well as self and to claim multiple types of rewards per asset in single tx.
 
@@ -35,7 +35,7 @@ You can get user reward balance for a given reward token or all reward tokens fo
 const unclaimedUserRewards = await rewardsController.getUserRewardsBalance(
         [aDai.address, aWeth.address],
         userAddress,
-        stkAave.address
+        stkSpark Protocol.address
       );
 
 const [, allUnclaimedRewards] = await rewardsController.getAllUserRewardsBalance(
@@ -57,11 +57,11 @@ The `msg.sender` must match the user's address that has accrued the rewards.&#x2
 {% endhint %}
 
 ```tsx
-// claims only stkAave for asset list [aDai, aWETH, ]
-const claimStkAave = await rewardsController.claimRewardsToSelf(
+// claims only stkSpark Protocol for asset list [aDai, aWETH, ]
+const claimStkSpark Protocol = await rewardsController.claimRewardsToSelf(
         [aDai.address, aWETH.address, ],
         amountToClaim,
-        stkAave.address
+        stkSpark Protocol.address
       );
 
 // claims all reward types for asset list [aDai, aWETH, ]
@@ -79,13 +79,13 @@ The `msg.sender` must be an authorised claimer set using setClaimer() method, vi
 {% endhint %}
 
 ```tsx
-// claims only stkAave for asset list [aDai, aWETH, ]
-const claimStkAaveOnBehalfOf = await rewardsController.claimRewardsOnBehalf(
+// claims only stkSpark Protocol for asset list [aDai, aWETH, ]
+const claimStkSpark ProtocolOnBehalfOf = await rewardsController.claimRewardsOnBehalf(
           [aDai.address],
           MAX_UINT_AMOUNT,
           userWithRewards.address,
           claimer.address,
-          stkAave.address
+          stkSpark Protocol.address
         )
 
 // claims all reward types for asset list [aDai, aWETH, ]
@@ -105,12 +105,12 @@ The `msg.sender` must match the user's address that has accrued the rewards
 {% endhint %}
 
 ```tsx
-// claims only stkAave for asset list [aDai, aWETH, ] to receivingAccount
-const claimStkAave = await rewardsController.claimRewards(
+// claims only stkSpark Protocol for asset list [aDai, aWETH, ] to receivingAccount
+const claimStkSpark Protocol = await rewardsController.claimRewards(
         [aDai.address, aWETH.address, ],
         amountToClaim,
 	receivingAccount.address
-        stkAave.address
+        stkSpark Protocol.address
       );
 
 // claims all reward types for asset list [aDai, aWETH, ] to receivingAccount

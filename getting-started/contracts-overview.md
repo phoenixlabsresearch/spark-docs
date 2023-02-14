@@ -52,13 +52,13 @@ Provider configuration methods for the Pool contract. The write methods of this 
 
 ### Tokenization
 
-#### [AToken](../tokens/atoken.md)
+#### [SpToken](../tokens/sptoken.md)
 
 Yield-generating tokens that are minted and burnt upon supply and withdraw of assets to Spark Pool
 
-#### [DelegationAwareAToken](../tokens/delegationawareatoken.md)
+#### [DelegationAwareSpToken](../tokens/delegationawaresptoken.md)
 
-The special type of aToken that are minted and burnt upon supply and withdraw of assets that has voting power associated (which can be delegated) with them.
+The special type of spToken that are minted and burnt upon supply and withdraw of assets that has voting power associated (which can be delegated) with them.
 
 #### [StableDebtToken](../tokens/debttoken.md)
 

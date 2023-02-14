@@ -10,7 +10,7 @@ The WETH Gateway contract is a helper to easily wrap and unwrap ETH (or native c
 
 **`function depositETH(address pool, address onBehalfOf, uint16 referralCode)`**
 
-Supplies the `msg.value` amount of ETH (or native chain token) into the Aave pool, minting the same amount of corresponding aWETH and transferring them to the `onBehalfOf` address.
+Supplies the `msg.value` amount of ETH (or native chain token) into the Spark Protocol pool, minting the same amount of corresponding aWETH and transferring them to the `onBehalfOf` address.
 
 {% hint style="info" %}
 Ensure that the `depositETH()` transaction also includes the amount of ETH you are supplying in the `msg.value`.
@@ -21,7 +21,7 @@ Call Params
 | Name         | Type    | Description                                                                                       |
 | ------------ | ------- | ------------------------------------------------------------------------------------------------- |
 | pool         | address | address of the targeted pool                                                                      |
-| onBehalfOf   | address | address who will receive the aWETH. Use msg.sender when the aTokens should be sent to the caller. |
+| onBehalfOf   | address | address who will receive the aWETH. Use msg.sender when the spTokens should be sent to the caller. |
 | referralCode | uint16  | <p>unique code for 3rd party referral program integration.<br>0 for no referra</p>                |
 
 ### withdrawETH
@@ -30,7 +30,7 @@ Call Params
 
 Withdraws `amount` of the WETH (or wrapped native chain token), unwraps it and transfers ETH (or native chain token) to the `to` address.
 
-💡 Ensure you set the relevant \`aToken\` allowance, before calling this function, so the \`WETHGateway\` contract can transfer the associated aWETH.
+💡 Ensure you set the relevant \`spToken\` allowance, before calling this function, so the \`WETHGateway\` contract can transfer the associated aWETH.
 
 Call Params
 
@@ -83,7 +83,7 @@ Call Params
 | Name     | Type    | Description                                                                                                                   |
 | -------- | ------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | pool     | address | address of the targeted pool                                                                                                  |
-| amount   | uint256 | amount of aWETH (or aToken corresponding to native token of chain) that will be burnt to withdraw ETH (or native chain token) |
+| amount   | uint256 | amount of aWETH (or spToken corresponding to native token of chain) that will be burnt to withdraw ETH (or native chain token) |
 | to       | address | address that will receive the ETH (or native chain token)                                                                     |
 | deadline | uint256 | unix timestamp till which the signature is valid                                                                              |
 | permitV  | uint8   | Signature parameter v                                                                                                         |
@@ -97,7 +97,7 @@ Call Params
 Method for ERC20 recovery in case of stuck tokens due direct transfers to the contract address.
 
 {% hint style="info" %}
-Can be called only by the owner of the contract i.e. Aave Governance
+Can be called only by the owner of the contract i.e. Maker Governance
 {% endhint %}
 
 ### emergencyEtherTransfer
@@ -107,7 +107,7 @@ Can be called only by the owner of the contract i.e. Aave Governance
 Method for ETH (or native chain token) recovery in case of stuck ETH due selfdestruct or transfer ether to pre-computated contract address before deployment.
 
 {% hint style="info" %}
-Can be called only by the owner of the contract i.e. Aave Governance.
+Can be called only by the owner of the contract i.e. Maker Governance.
 {% endhint %}
 
 ### View

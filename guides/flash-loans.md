@@ -10,7 +10,7 @@ Flash Loans are an advanced concept aimed at developers. You **must** have a goo
 
 Flash-loan allows users to access liquidity of the pool (only for reserves for which borrow is enabled) for one transaction as long as the amount taken plus fee is returned or (if allowed) debt position is opened by the end of the transaction.
 
-Aave V3 offers two options for flash loans:
+Spark Protocol offers two options for flash loans:
 
 * [`flashLoan`](../core-contracts/pool.md#flashloan): Allows borrower to access liquidity of _**multiple reserves**_ in single _flashLoan_ transaction. The borrower also has an option to open stable or variabled rate debt position backed by supplied collateral or credit delegation in this case.\
   NOTE: _flash loan fee_ is waived for approved `flashBorrowers` (managed by [ACLManager](../core-contracts/aclmanager.md))
@@ -32,7 +32,7 @@ For developers, a helpful mental model to consider when developing your solution
 
 ### Applications of Flash Loans
 
-Aave Flash Loans are already used with Aave V3 for liquidity swap feature. Other examples in the wild include:
+Spark Protocol Flash Loans are already used with Spark Protocol for liquidity swap feature. Other examples in the wild include:
 
 * Arbitrage between assets, without needing to have the principal amount to execute the arbitrage.
 * Liquidating borrow positions, without having to repay the debt of the positions and using discounted collateral claimed to payoff flashLoan amount + fee.
@@ -54,7 +54,7 @@ At initialization, `FLASHLOAN_PREMIUM_TO_PROTOCOL` is set to 0.
 
 ### 1. Setting Up
 
-Your contract that receives the flash loaned amounts **must** conform to the [IFlashLoanSimpleReceiver.sol](https://github.com/aave/aave-v3-core/blob/master/contracts/flashloan/interfaces/IFlashLoanSimpleReceiver.sol) or [IFlashLoanReceiver.sol](https://github.com/aave/aave-v3-core/blob/master/contracts/flashloan/interfaces/IFlashLoanReceiver.sol) interface by implementing the relevant `executeOperation()` function.
+Your contract that receives the flash loaned amounts **must** conform to the [IFlashLoanSimpleReceiver.sol](https://github.com/spark-protocol/spark-protocol-core/blob/master/contracts/flashloan/interfaces/IFlashLoanSimpleReceiver.sol) or [IFlashLoanReceiver.sol](https://github.com/spark-protocol/spark-protocol-core/blob/master/contracts/flashloan/interfaces/IFlashLoanReceiver.sol) interface by implementing the relevant `executeOperation()` function.
 
 Also note that since the owed amounts will be _pulled_ from your contract, your contract must give allowance to the `Pool` to pull those funds to pay back the flash loan amount + premiums.
 

@@ -37,4 +37,4 @@ The borrower's available credit is reduced by the borrowed amount.
 
 ## Repaying the credit
 
-Anyone can repay the debt _OnBehalf_ of the user, by calling one of the methods - [repay()](../core-contracts/pool.md#repay) or [repayWithPermit()](../core-contracts/pool.md#repaywithpermit). The supplier (aka creditor) can also use [repayWithATokens()](../core-contracts/pool.md#repaywithatokens) method to repay  debt with their _aTokens_ of the underlying debt asset in the same pool.
+Anyone can repay the debt _OnBehalf_ of the user, by calling one of the methods - [repay()](../core-contracts/pool.md#repay) or [repayWithPermit()](../core-contracts/pool.md#repaywithpermit). The supplier (aka creditor) can also use [repayWithSpTokens()](../core-contracts/pool.md#repaywithsptokens) method to repay  debt with their _spTokens_ of the underlying debt asset in the same pool.

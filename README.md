@@ -8,7 +8,7 @@ We allow users to optimise their assets supplied to the Spark Protocol in terms 
 
 ### [Portal](whats-new/portal.md)
 
-This feature allows flow of liquidity between Spark Protocl markets across different networks. Spark Protocol allows governance-approved bridges to burn aTokens on the source network while instantly minting them on the destination network. The underlying assets can then be supplied to Spark on the destination network in a deferred manner, by passing it to the pool after it has been moved through a bridge.
+This feature allows flow of liquidity between Spark Protocl markets across different networks. Spark Protocol allows governance-approved bridges to burn spTokens on the source network while instantly minting them on the destination network. The underlying assets can then be supplied to Spark on the destination network in a deferred manner, by passing it to the pool after it has been moved through a bridge.
 
 Spark Protocl provides new system role - `BRIDGE` - with permission to leverage Portal feature. Only the addresses with the `BRIDGE_ROLE` can move the supplied liquidity in Spark Protocl.
 
@@ -22,8 +22,8 @@ This can help bridging protocols like Connext, Hop Protocol, Anyswap, xPollinate
 
 In order to support _**Portal,**_ following three additional features are required by the protocol:
 
-* **Mint Unbacked Tokens**: Allows addresses, with `BRIDGE` role permission, to mint unbacked _aTokens_ to the `onBehalfOf` address.
-* **Back Unbacked Tokens**: Allows contracts, with `BRIDGE` role permission, to back the currently unbacked aTokens with `amount` of underlying asset and pay `fee`.
+* **Mint Unbacked Tokens**: Allows addresses, with `BRIDGE` role permission, to mint unbacked _spTokens_ to the `onBehalfOf` address.
+* **Back Unbacked Tokens**: Allows contracts, with `BRIDGE` role permission, to back the currently unbacked spTokens with `amount` of underlying asset and pay `fee`.
 * **Whitelist Bridges**: allows the _Bridge Role Admin_ to add/remove addresses for `BRIDGE_ROLE`.
 
 {% hint style="info" %}

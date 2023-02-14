@@ -78,7 +78,7 @@ Return Values
                 "type": "address"
             }
         ],
-        "name": "getATokenTotalSupply",
+        "name": "getSpTokenTotalSupply",
         "outputs": [
             {
                 "internalType": "uint256",
@@ -91,7 +91,7 @@ Return Values
     },
     {
         "inputs": [],
-        "name": "getAllATokens",
+        "name": "getAllSpTokens",
         "outputs": [
             {
                 "components": [
@@ -338,7 +338,7 @@ Return Values
             },
             {
                 "internalType": "uint256",
-                "name": "totalAToken",
+                "name": "totalSpToken",
                 "type": "uint256"
             },
             {
@@ -421,7 +421,7 @@ Return Values
         "outputs": [
             {
                 "internalType": "address",
-                "name": "aTokenAddress",
+                "name": "spTokenAddress",
                 "type": "address"
             },
             {
@@ -512,7 +512,7 @@ Return Values
         "outputs": [
             {
                 "internalType": "uint256",
-                "name": "currentATokenBalance",
+                "name": "currentSpTokenBalance",
                 "type": "uint256"
             },
             {

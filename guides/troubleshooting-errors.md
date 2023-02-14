@@ -2,7 +2,7 @@
 
 ## Error Codes
 
-In order to reduce gas usage and code size, aave contracts return numbered errors. If you are making calls to the protocol and receive numbered errors, you can use the reference below to know what is the error. Alternatively, you can also find what the numbers represent by checking the [`Errors.sol`](https://github.com/aave/aave-v3-core/blob/master/contracts/protocol/libraries/helpers/Errors.sol)
+In order to reduce gas usage and code size, /spark-protocol contracts return numbered errors. If you are making calls to the protocol and receive numbered errors, you can use the reference below to know what is the error. Alternatively, you can also find what the numbers represent by checking the [`Errors.sol`](https://github.com/spark-protocol/spark-protocol-core/blob/master/contracts/protocol/libraries/helpers/Errors.sol)
 
 ### Reference Guide
 
@@ -20,7 +20,7 @@ Error codes are returned as string.
 | 8                   | INVALID_ADDRESSES_PROVIDER_ID                  | Invalid id for the pool addresses provider                                                                |
 | 9                   | NOT_CONTRACT                                   | Address is not a contract                                                                                 |
 | 10                  | CALLER_NOT_POOL_CONFIGURATOR                   | The caller of the function is not the pool configurator                                                   |
-| 11                  | CALLER_NOT_ATOKEN                              | The caller of the function is not an AToken                                                               |
+| 11                  | CALLER_NOT_ATOKEN                              | The caller of the function is not an SpToken                                                               |
 | 12                  | INVALID_ADDRESSES_PROVIDER                     | The address of the pool addresses provider is invalid                                                     |
 | 13                  | INVALID_FLASHLOAN_EXECUTOR_RETURN              | Invalid return value of the flashloan executor function                                                   |
 | 14                  | RESERVE_ALREADY_ADDED                          | Reserve has already been added to reserve list                                                            |
@@ -63,7 +63,7 @@ Error codes are returned as string.
 | 51                  | SUPPLY_CAP_EXCEEDED                            | Supply cap is exceeded                                                                                    |
 | 52                  | UNBACKED_MINT_CAP_EXCEEDED                     | Unbacked mint cap is exceeded                                                                             |
 | 53                  | DEBT_CEILING_EXCEEDED                          | Debt ceiling is exceeded                                                                                  |
-| 54                  | ATOKEN_SUPPLY_NOT_ZERO                         | AToken supply is not zero                                                                                 |
+| 54                  | ATOKEN_SUPPLY_NOT_ZERO                         | SpToken supply is not zero                                                                                 |
 | 55                  | STABLE_DEBT_NOT_ZERO                           | Stable debt supply is not zero                                                                            |
 | 56                  | VARIABLE_DEBT_SUPPLY_NOT_ZERO                  | Variable debt supply is not zero                                                                          |
 | 57                  | LTV_VALIDATION_FAILED                          | Ltv validation failed                                                                                     |

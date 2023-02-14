@@ -2,9 +2,9 @@
 
 ## UiIncentiveDataProviderV3
 
-Contract that returns an array of all reserve incentives or user claimable rewards within a particular market, used by the [Aave Interface](https://github.com/aave/interface/) to display incentives data. Compatible with both V2 and V3 of the Aave Protocol.
+Contract that returns an array of all reserve incentives or user claimable rewards within a particular market, used by the [Spark Protocol Interface](https://github.com/spark-protocol/interface/) to display incentives data. Compatible with both V2 and V3 of the Spark Protocol.
 
-The [Aave Utilities SDK](https://github.com/aave/aave-utilities#data-formatting-methods) includes an interface to make calls to this contract, and functions to format the response for frontend use-cases.
+The [Spark Protocol Utilities SDK](https://github.com/spark-protocol//spark-protocol-utilities#data-formatting-methods) includes an interface to make calls to this contract, and functions to format the response for frontend use-cases.
 
 ## Data Structures
 
@@ -13,9 +13,9 @@ The [Aave Utilities SDK](https://github.com/aave/aave-utilities#data-formatting-
 | Name            | Type          | Description                                                                                               |
 | --------------- | ------------- | --------------------------------------------------------------------------------------------------------- |
 | underlyingAsset | address       | Address of the asset supplied/borrowed in Pool                                                            |
-| aIncentiveData  | IncentiveData | Details of rewards distributed for supplying to Aave Pool i.e. rewards for aToken holders.                |
-| vIncentiveData  | IncentiveData | Details of rewards distributed for variable debt borrowed from Aave Pool i.e. rewards for vToken holders. |
-| sIncentiveData  | IncentiveData | Details of rewards distributed for stable debt borrowed from Aave Pool i.e. rewards for sToken holders.   |
+| aIncentiveData  | IncentiveData | Details of rewards distributed for supplying to Spark Protocol Pool i.e. rewards for spToken holders.                |
+| vIncentiveData  | IncentiveData | Details of rewards distributed for variable debt borrowed from Spark Protocol Pool i.e. rewards for vToken holders. |
+| sIncentiveData  | IncentiveData | Details of rewards distributed for stable debt borrowed from Spark Protocol Pool i.e. rewards for sToken holders.   |
 
 #### IncentiveData
 
@@ -46,9 +46,9 @@ The [Aave Utilities SDK](https://github.com/aave/aave-utilities#data-formatting-
 | Name                     | Type              | Description                                                                                             |
 | ------------------------ | ----------------- | ------------------------------------------------------------------------------------------------------- |
 | underlyingAsset          | address           | Address of the asset supplied/borrowed in Pool                                                          |
-| aTokenIncentivesUserData | UserIncentiveData | Details of user rewards received for supplying to Aave Pool i.e. rewards for aToken.                    |
-| vTokenIncentivesUserData | UserIncentiveData | Details of user rewards received for borrowing at variable rate from Aave Pool i.e. rewards for vToken. |
-| sTokenIncentivesUserData | UserIncentiveData | Details of user rewards received for borrowing at stable rate from Aave Pool i.e. rewards for sToken.   |
+| spTokenIncentivesUserData | UserIncentiveData | Details of user rewards received for supplying to Spark Protocol Pool i.e. rewards for spToken.                    |
+| vTokenIncentivesUserData | UserIncentiveData | Details of user rewards received for borrowing at variable rate from Spark Protocol Pool i.e. rewards for vToken. |
+| sTokenIncentivesUserData | UserIncentiveData | Details of user rewards received for borrowing at stable rate from Spark Protocol Pool i.e. rewards for sToken.   |
 
 #### UserIncentiveData
 
@@ -429,7 +429,7 @@ Returns both `AggregatedReserveIncentiveData[]` and `UserReserveIncentiveData[]`
                             }
                         ],
                         "internalType": "struct IUiIncentiveDataProviderV3.UserIncentiveData",
-                        "name": "aTokenIncentivesUserData",
+                        "name": "spTokenIncentivesUserData",
                         "type": "tuple"
                     },
                     {
@@ -915,7 +915,7 @@ Returns both `AggregatedReserveIncentiveData[]` and `UserReserveIncentiveData[]`
                             }
                         ],
                         "internalType": "struct IUiIncentiveDataProviderV3.UserIncentiveData",
-                        "name": "aTokenIncentivesUserData",
+                        "name": "spTokenIncentivesUserData",
                         "type": "tuple"
                     },
                     {

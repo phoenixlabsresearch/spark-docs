@@ -22,18 +22,18 @@ Return Value
 | `string`  | The symbol of the underlying reserve asset  | 
 | `address` | The address of the underlying reserve asset |
 
-#### getAllATokens
+#### getAllSpTokens
 
-`function getAllATokens() external view returns (TokenData[] memory)`
+`function getAllSpTokens() external view returns (TokenData[] memory)`
 
-Returns list of the existing ATokens in the pool.
+Returns list of the existing SpTokens in the pool.
 
 Return Value
 
 | Type      | Description                              |
 | --------- | ---------------------------------------- |
-| `string`  | The symbol of aToken of the reserve      | 
-| `address` | The address of aToken of the reserve     |
+| `string`  | The symbol of spToken of the reserve      | 
+| `address` | The address of spToken of the reserve     |
 
 #### getReserveConfigurationData
 
@@ -217,9 +217,9 @@ Return Value
 
 | Type      | Description                                                          |
 | --------- | -------------------------------------------------------------------- |
-| `uint256` | The amount of unbacked aTokens of the reserve                        |
+| `uint256` | The amount of unbacked spTokens of the reserve                        |
 | `uint256` | The scaled amount of tokens accrued to treasury that is to be minted |
-| `uint256` | The total supply of the aToken                                       |
+| `uint256` | The total supply of the spToken                                       |
 | `uint256` | The total stable debt of the reserve                                 |
 | `uint256` | The total variable debt of the reserve                               |
 | `uint256` | The liquidity rate of the reserve                                    |
@@ -230,11 +230,11 @@ Return Value
 | `uint256` | The variable borrow index of the reserve                             |
 | `uint40`  | The timestamp of the last update of the reserve                      |
 
-#### getATokenTotalSupply
+#### getSpTokenTotalSupply
 
-`function getATokenTotalSupply(address asset) external view override returns (uint256)`
+`function getSpTokenTotalSupply(address asset) external view override returns (uint256)`
 
-Returns the total supply of aTokens for a given asset
+Returns the total supply of spTokens for a given asset
 
 Call Params
 
@@ -246,7 +246,7 @@ Return Value
 
 | Type      | Description                    |
 | --------- | ------------------------------ |
-| `uint256` | The total supply of the aToken |
+| `uint256` | The total supply of the spToken |
 
 #### getTotalDebt
 
@@ -283,7 +283,7 @@ Return Value
 
 | Type      | Description                                                   |
 | --------- | ------------------------------------------------------------- |
-| `uint256` | The current AToken balance of the user                        |
+| `uint256` | The current SpToken balance of the user                        |
 | `uint256` | The current stable debt of the user                           |
 | `uint256` | The current variable debt of the user                         |
 | `uint256` | The principal stable debt of the user                         |
@@ -295,9 +295,9 @@ Return Value
 
 #### getReserveTokensAddresses
 
-`function getReserveTokensAddresses(address asset) external view returns (address aTokenAddress, address stableDebtTokenAddress, address variableDebtTokenAddress)`
+`function getReserveTokensAddresses(address asset) external view returns (address spTokenAddress, address stableDebtTokenAddress, address variableDebtTokenAddress)`
 
-Returns the addresses of aToken, stableDebtToken and variableDebtToken of the reserve
+Returns the addresses of spToken, stableDebtToken and variableDebtToken of the reserve
 
 Call Params
 
@@ -309,7 +309,7 @@ Return Value
 
 | Type      | Description                                  |
 | --------- | -------------------------------------------- |
-| `address` | The AToken address of the reserve            |
+| `address` | The SpToken address of the reserve            |
 | `address` | The StableDebtToken address of the reserve   |
 | `address` | The VariableDebtToken address of the reserve |
 
@@ -369,7 +369,7 @@ Return Value
                 "type": "address"
             }
         ],
-        "name": "getATokenTotalSupply",
+        "name": "getSpTokenTotalSupply",
         "outputs": [
             {
                 "internalType": "uint256",
@@ -382,7 +382,7 @@ Return Value
     },
     {
         "inputs": [],
-        "name": "getAllATokens",
+        "name": "getAllSpTokens",
         "outputs": [
             {
                 "components": [
@@ -629,7 +629,7 @@ Return Value
             },
             {
                 "internalType": "uint256",
-                "name": "totalAToken",
+                "name": "totalSpToken",
                 "type": "uint256"
             },
             {
@@ -712,7 +712,7 @@ Return Value
         "outputs": [
             {
                 "internalType": "address",
-                "name": "aTokenAddress",
+                "name": "spTokenAddress",
                 "type": "address"
             },
             {
@@ -803,7 +803,7 @@ Return Value
         "outputs": [
             {
                 "internalType": "uint256",
-                "name": "currentATokenBalance",
+                "name": "currentSpTokenBalance",
                 "type": "uint256"
             },
             {

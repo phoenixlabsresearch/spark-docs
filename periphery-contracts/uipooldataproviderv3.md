@@ -2,22 +2,22 @@
 
 ## UiPoolDataProviderV3
 
-Contract that returns an array of all reserve or user data for a particular market, used by the [Aave Interface](https://github.com/aave/interface/) to display Markets and Dashboard data. Compatible with both V2 and V3 of the Aave Protocol.
+Contract that returns an array of all reserve or user data for a particular market, used by the [Spark Protocol Interface](https://github.com/spark-protocol/interface/) to display Markets and Dashboard data. Compatible with both V2 and V3 of the Spark Protocol.
 
-The [Aave Utilities SDK](https://github.com/aave/aave-utilities#data-formatting-methods) includes an interface to make calls to this contract, and functions to format the response for frontend use-cases.
+The [Spark Protocol Utilities SDK](https://github.com/spark-protocol//spark-protocol-utilities#data-formatting-methods) includes an interface to make calls to this contract, and functions to format the response for frontend use-cases.
 
 ## Data Structures
 
 ### AggregatedReserveData
 
-View fields of `AggregatedReserveData` defined at [Github](https://github.com/aave/aave-v3-periphery/blob/ed38b6719d4bbd9d17dfbd6b9849326a0bdeea2c/contracts/misc/interfaces/IUiPoolDataProviderV3.sol#L8).
+View fields of `AggregatedReserveData` defined at [Github](https://github.com/spark-protocol/spark-protocol-periphery/blob/ed38b6719d4bbd9d17dfbd6b9849326a0bdeea2c/contracts/misc/interfaces/IUiPoolDataProviderV3.sol#L8).
 
 ### UserReserveData
 
 | Name                            | Type    | Description                                                                            |
 | ------------------------------- | ------- | -------------------------------------------------------------------------------------- |
 | underlyingAsset                 | address | Address of the underlying asset supplied/borrowed                                      |
-| scaledATokenBalance             | uint256 | <p>scaled balance of aToken<br><br><em>scaledBalance = balance/liquidityIndex</em></p> |
+| scaledSpTokenBalance             | uint256 | <p>scaled balance of spToken<br><br><em>scaledBalance = balance/liquidityIndex</em></p> |
 | usageAsCollateralEnabledOnUser  | bool    | true if supplied asset is enabled to be used as collateral                             |
 | stableBorrowRate                | uint256 | Stable rate at which underlying asset is borrowed by the user. 0 ⇒ no debt             |
 | scaledVariableDebt              | uint256 | <p>scaled balance of vToken<br><br><em>scaledBalance = balance/liquidityIndex</em></p> |
@@ -26,11 +26,11 @@ View fields of `AggregatedReserveData` defined at [Github](https://github.com/aa
 
 ### BaseCurrencyInfo
 
-Info data struct for base currency of the Aave protocol market.
+Info data struct for base currency of the Spark Protocol market.
 
 | Name                              | Type    | Description                                       |
 | --------------------------------- | ------- | ------------------------------------------------- |
-| marketReferenceCurrencyUnit       | uint256 | Reference aka base currency of the Aave market    |
+| marketReferenceCurrencyUnit       | uint256 | Reference aka base currency of the Spark Protocol market    |
 | marketReferenceCurrencyPriceInUsd | int256  | Price of reference aka base currency in USD       |
 | networkBaseTokenPriceInUsd        | int256  | Price of native token of the network/chain in USD |
 | networkBaseTokenPriceDecimals     | uint8   | Decimals of native token of the network/chain     |
@@ -231,7 +231,7 @@ Returns `UserReserveData[]` for all user reserves in the Pool associated with th
                     },
                     {
                         "internalType": "address",
-                        "name": "aTokenAddress",
+                        "name": "spTokenAddress",
                         "type": "address"
                     },
                     {
@@ -478,7 +478,7 @@ Returns `UserReserveData[]` for all user reserves in the Pool associated with th
                     },
                     {
                         "internalType": "uint256",
-                        "name": "scaledATokenBalance",
+                        "name": "scaledSpTokenBalance",
                         "type": "uint256"
                     },
                     {

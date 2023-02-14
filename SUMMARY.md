@@ -16,7 +16,7 @@
 * [Isolation Mode](whats-new/isolation-mode.md)
 * [Siloed Borrowing](whats-new/siloed-borrowing.md)
 * [Supply Borrow Caps](whats-new/supply-borrow-caps.md)
-* [Repay With aTokens](whats-new/repay-with-atokens.md)
+* [Repay With spTokens](whats-new/repay-with-sptokens.md)
 * [Multiple Rewards and Claim](whats-new/multiple-rewards-and-claim.md)
 
 ## Guides
@@ -30,18 +30,18 @@
   * [Rewards](guides/governance-guide/rewards.md)
   * [Permissions](guides/governance-guide/permissions.md)
   * [Parameter Tuning](guides/governance-guide/parametertuning.md)
-* [Aavenomics](https://aave.com/Aavenomics.pdf)
+* [Spark Protocolnomics](https://sparkprotocol.io/Spark Protocolnomics.pdf)
 
 ## Core Contracts
 
 * [ACLManager](core-contracts/aclmanager.md)
-* [AaveProtocolDataProvider](core-contracts/aaveprotocoldataprovider.md)
+* [Spark ProtocolProtocolDataProvider](core-contracts//spark-protocolprotocoldataprovider.md)
 * [PoolAddressesProvider](core-contracts/pooladdressesprovider.md)
 * [PoolAddressesProviderRegistry](core-contracts/pooladdressesproviderregistry.md)
 * [PriceOracleSentinel](core-contracts/priceoraclesentinel.md)
 * [Pool](core-contracts/pool.md)
 * [PoolConfigurator](core-contracts/poolconfigurator.md)
-* [AaveOracle](core-contracts/aaveoracle.md)
+* [Spark ProtocolOracle](core-contracts//spark-protocoloracle.md)
 
 ## Periphery Contracts
 
@@ -53,9 +53,9 @@
 
 ## Tokens
 
-* [AToken](tokens/atoken.md)
+* [SpToken](tokens/sptoken.md)
 * [DebtToken](tokens/debttoken.md)
-* [DelegationAwareAToken](tokens/delegationawareatoken.md)
+* [DelegationAwareSpToken](tokens/delegationawaresptoken.md)
 
 ## Deployed Contracts
 
@@ -69,6 +69,6 @@
   * [Harmony](deployed-contracts/v3-mainnet/harmony.md)
 * [Deployed Contracts](deployed-contracts/deployed-contracts.md)
 * [Security & Audits](deployed-contracts/security-and-audits.md)
-* [FAQ](https://docs.aave.com/faq/)
-* [Careers](https://apply.workable.com/aave/)
-* [Bug Bounty](https://github.com/aave/bug-bounty)
+* [FAQ](https://docs.sparkprotocol.io/faq/)
+* [Careers](https://apply.workable.com/spark-protocol/)
+* [Bug Bounty](https://github.com/spark-protocol/bug-bounty)
