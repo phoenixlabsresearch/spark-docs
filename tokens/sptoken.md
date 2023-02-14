@@ -177,7 +177,7 @@ await spTokenContract.methods
 
 *   How spToken earn interest? / How spToken balance increases?
 
-    [LendingPool](/lending-pool/lending_pool.md) methods (deposit, withdraw, borrow, repay, liquidationCall) updates the state and cumulated liquidity index of the reserve once every block. SpToken's `balanceOf` method returns the balance computed based on `block.timestamp` and `liquidityIndex` of the underlying reserve and hence, returns the most up to date balance of account, which includes `principal + interest.`
+    [LendingPool](lending-pool/lending_pool.md) methods (deposit, withdraw, borrow, repay, liquidationCall) updates the state and cumulated liquidity index of the reserve once every block. SpToken's `balanceOf` method returns the balance computed based on `block.timestamp` and `liquidityIndex` of the underlying reserve and hence, returns the most up to date balance of account, which includes `principal + interest.`
 * LiquidityRate vs LiquidityIndex
 *   Can I transfer spTokens?
 
