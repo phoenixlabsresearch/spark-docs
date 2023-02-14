@@ -177,7 +177,7 @@ await spTokenContract.methods
 
 *   How spToken earn interest? / How spToken balance increases?
 
-    [LendingPool](../lending-pool/lending_pool.md) methods (deposit, withdraw, borrow, repay, liquidationCall) updates the state and cumulated liquidity index of the reserve once every block. SpToken's `balanceOf` method returns the balance computed based on `block.timestamp` and `liquidityIndex` of the underlying reserve and hence, returns the most up to date balance of account, which includes `principal + interest.`
+    [Pool](../core-contracts/pool.md) methods (deposit, withdraw, borrow, repay, liquidationCall) updates the state and cumulated liquidity index of the reserve once every block. SpToken's `balanceOf` method returns the balance computed based on `block.timestamp` and `liquidityIndex` of the underlying reserve and hence, returns the most up to date balance of account, which includes `principal + interest.`
 * LiquidityRate vs LiquidityIndex
 *   Can I transfer spTokens?
 
@@ -191,7 +191,7 @@ await spTokenContract.methods
 * What is the difference between ScaledBalance and Balance?
 *   Example please!
 
-    Let’s say you supply 1,000 DAI to the Spark [LendingPool](lending_pool.md), you will receive 1,000 spDAI (at 1:1 exchange rate).
+    Let’s say you supply 1,000 DAI to the Spark [Pool](../core-contracts/pool.md), you will receive 1,000 spDAI (at 1:1 exchange rate).
 
     You can see your spDAI balance increasing right away.
 

@@ -5,7 +5,7 @@
 * [Spark Protocol Overview](README.md)
 * [Contracts Overview](getting-started/contracts-overview.md)
 
-## What's New?
+## Features
 
 * [Efficiency Mode (eMode)](whats-new/efficiency-mode-emode.md)
 * [Isolation Mode](whats-new/isolation-mode.md)
@@ -31,6 +31,11 @@
 * [Pool](core-contracts/pool.md)
 * [PoolConfigurator](core-contracts/poolconfigurator.md)
 * [AaveProtocolOracle](core-contracts//spark-protocoloracle.md)
+* 
+*
+* 
+* 
+* 
 
 ## Periphery Contracts
 
@@ -48,8 +53,8 @@
 
 ## Deployed Contracts
 
-* [Spark Protocol Testnet Addresses](deployed-contracts/testnet-addresses.md)
+* [Spark Protocol Testnet Addresses](deployed-contracts/spark-testnet-addresses.md)
 * [Spark Protocol Mainnet](deployed-contracts/mainnet/README.md)
 * [Deployed Contracts](deployed-contracts/deployed-contracts.md)
 * [Security & Audits](deployed-contracts/security-and-audits.md)
-* [FAQ](https://docs.sparkprotocol.io/faq/)
+* [FAQ](faq.md)
