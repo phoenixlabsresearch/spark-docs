@@ -14,7 +14,7 @@ For liquidation calls to be profitable, you must take into account the gas cost 
 {% endhint %}
 
 {% hint style="success" %}
-V3 allows 100% of debt (i.e. `MAX_LIQUIDATION_CLOSE_FACTOR`) to be liquidated in single `liquidationCall()` if:\
+Spark Protocol allows 100% of debt (i.e. `MAX_LIQUIDATION_CLOSE_FACTOR`) to be liquidated in single `liquidationCall()` if:\
 `HF < CLOSE_FACTOR_HF_THRESHOLD`
 {% endhint %}
 

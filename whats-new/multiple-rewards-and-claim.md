@@ -2,9 +2,9 @@
 
 ## Multiple Rewards and Claim
 
-Spark Protocol offers option to have _**multiple rewards**_ per token. Now, it is possible for an asset listing to enable additional incentive rewards denominated in their protocol tokens.
+Spark Protocol offers the option to have _**multiple rewards**_ per token. Now, it is possible for an asset listing to enable additional incentive rewards denominated in their protocol tokens.
 
-V3 also allows user to claim rewards to another account as well as self and to claim multiple types of rewards per asset in single tx.
+Spark Protocol also allows a user to claim rewards to another account as well as self and to claim multiple types of rewards per asset in single tx.
 
 The [RewardsController](../periphery-contracts/rewardscontroller.md) contract is the main contract where the user interacts to claim the rewards of their positions. The users can claim all the rewards or an individual reward per transaction, with a variety of functions that allow more granularity at claim.
 

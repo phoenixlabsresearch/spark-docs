@@ -2,9 +2,9 @@
 
 ## Contracts Overview
 
-The Spark Protocol V3 contracts are divided in _two repositories:_
+The Spark Protocol contracts are divided in _two repositories:_
 
-* [sparklend](https://github.com/phoenixlabsresearch/sparklend): Hosts core protocol V3 contracts that contains the logic for - supply, borrow, liquidation, flashloan, a/s/v tokens, portal, pool configuration, oracles and interest rate strategies.
+* [sparklend](https://github.com/phoenixlabsresearch/sparklend): Hosts core protocol contracts that contains the logic for - supply, borrow, liquidation, flashloan, sp/s/v tokens, pool configuration, oracles and interest rate strategies.
 * [sparklend-periphery](https://github.com/phoenixlabsresearch/sparklend-periphery): rewards, ui data provider, incentive data provider, wallet balance provider and WETH gateway.
 
 ## Core Contracts
@@ -20,7 +20,7 @@ Core protocol contracts fall in following 4 categories:
 
 #### [ACLManager](../core-contracts/aclmanager.md)
 
-Spark Protocol V3 implements an access control list to segregate powers and/or benefits that can be allocated to different entities on the protocol. The roles and holders are managed in the [`ACLManager.sol`](https://github.com/phoenixlabsresearch/sparklend/blob/master/contracts/protocol/configuration/ACLManager.sol), which keeps track of the individual roles and its holders.
+Spark Protocol implements an access control list to segregate powers and/or benefits that can be allocated to different entities on the protocol. The roles and holders are managed in the [`ACLManager.sol`](https://github.com/phoenixlabsresearch/sparklend/blob/master/contracts/protocol/configuration/ACLManager.sol), which keeps track of the individual roles and its holders.
 
 #### [PoolAddressesProvider](../core-contracts/pooladdressesprovider.md)
 

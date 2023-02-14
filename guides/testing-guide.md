@@ -19,7 +19,7 @@ TODO - add faucets & check https://app.sparkprotocol.io/faucet/
 
 Each testnet market has a custom set of assets which can be fauceted from the Spark Protocol faucet. To access the faucet interface: switch to the market which you want to test, be sure your wallet is connected to the correct network and *testnet mode* is on. The faucet link is available at bottom of the supply column in _Dashboard_ or you can manually update url to `https://app.sparkprotocol.io/faucet/`.
 
-Once you have test assets, you can supply, borrow, repay, withdraw, and test V3 features:
+Once you have test assets, you can supply, borrow, repay, withdraw, and test the features:
 
 ### E-Mode
 
