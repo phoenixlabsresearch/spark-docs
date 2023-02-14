@@ -2,7 +2,7 @@
 
 ## Multiple Rewards and Claim
 
-Spark Protocol offers the option to have _**multiple rewards**_ per token. Now, it is possible for an asset listing to enable additional incentive rewards denominated in their protocol tokens.
+Spark Protocol offers the option to have _**multiple rewards**_ per token depending on whether an asset listing to enables an incentive rewards denominated in their protocol tokens.
 
 Spark Protocol also allows a user to claim rewards to another account as well as self and to claim multiple types of rewards per asset in single tx.
 
@@ -32,12 +32,6 @@ const spDaiRewardOneData = await rewardsController.getRewardsData(
 You can get user reward balance for a given reward token or all reward tokens for a given list of assets using `getUserRewardsBalance()` or `getAllUserRewardsBalance()` respectively.
 
 ```typescript
-const unclaimedUserRewards = await rewardsController.getUserRewardsBalance(
-        [spDai.address, aWeth.address],
-        userAddress,
-        stkSpark Protocol.address
-      );
-
 const [, allUnclaimedRewards] = await rewardsController.getAllUserRewardsBalance(
         [spDai.address, aWeth.address],
         userAddress
@@ -57,12 +51,6 @@ The `msg.sender` must match the user's address that has accrued the rewards.&#x2
 {% endhint %}
 
 ```tsx
-// claims only stkSpark Protocol for asset list [spDai, aWETH, ]
-const claimStkSpark Protocol = await rewardsController.claimRewardsToSelf(
-        [spDai.address, aWETH.address, ],
-        amountToClaim,
-        stkSpark Protocol.address
-      );
 
 // claims all reward types for asset list [spDai, aWETH, ]
 const claimAllRewards = await rewardsController.claimAllRewardsToSelf(

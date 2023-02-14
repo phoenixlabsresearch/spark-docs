@@ -4,7 +4,6 @@
 
 * [Spark Protocol Overview](README.md)
 * [Contracts Overview](getting-started/contracts-overview.md)
-* [Protocol Features Summary](getting-started/protocol-feature-summary.md)
 
 ## What's New?
 

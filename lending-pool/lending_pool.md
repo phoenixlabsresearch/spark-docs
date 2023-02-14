@@ -29,7 +29,13 @@ The `referralCode` is emitted in deposit event and can be for third party refer
 
 </aside>
 
-[call params](https://www.notion.so/7487dd260d0b4afe93d94beb9d41f9b9)
+#### **call params**
+|Parameter Name|Type   |Description                                                                                            |
+|--------------|-------|-------------------------------------------------------------------------------------------------------|
+|asset         |address|address of the underlying asset                                                                        |
+|amount        |uint256|amount deposited, expressed in wei units                                                               |
+|onBehalfOf    |address|address whom will receive the aTokens. Use msg.sender when the aTokens should be sent to the caller.   |
+|referralCode  |uint16 |referral code for 3rd party referral program integration. Use 0 for no referral.                       |
 
 ### **withdraw()**
 
