@@ -16,13 +16,13 @@ User(s) should already have a position in the protocol. Depending on the market 
 
 ### Check rewards enabled
 
-To get list of rewards available for the given asset, use the `getRewardsByAsset()` method, passing in the associated _a/s/vToken_ address of the incentivised asset. Use `getRewardsData()` to get details per reward per asset.
+To get list of rewards available for the given asset, use the `getRewardsByAsset()` method, passing in the associated _sp/s/vToken_ address of the incentivised asset. Use `getRewardsData()` to get details per reward per asset.
 
 ```typescript
-const aDaiRewardsList = await rewardsController.getRewardsByAsset(aDaiAddress);
+const spDaiRewardsList = await rewardsController.getRewardsByAsset(spDaiAddress);
 
-const aDaiRewardOneData = await rewardsController.getRewardsData(
-        aDaiAddress,
+const spDaiRewardOneData = await rewardsController.getRewardsData(
+        spDaiAddress,
         rewardOneAddress
     );
 ```
@@ -33,13 +33,13 @@ You can get user reward balance for a given reward token or all reward tokens fo
 
 ```typescript
 const unclaimedUserRewards = await rewardsController.getUserRewardsBalance(
-        [aDai.address, aWeth.address],
+        [spDai.address, aWeth.address],
         userAddress,
         stkSpark Protocol.address
       );
 
 const [, allUnclaimedRewards] = await rewardsController.getAllUserRewardsBalance(
-        [aDai.address, aWeth.address],
+        [spDai.address, aWeth.address],
         userAddress
       );
 ```
@@ -57,16 +57,16 @@ The `msg.sender` must match the user's address that has accrued the rewards.&#x2
 {% endhint %}
 
 ```tsx
-// claims only stkSpark Protocol for asset list [aDai, aWETH, ]
+// claims only stkSpark Protocol for asset list [spDai, aWETH, ]
 const claimStkSpark Protocol = await rewardsController.claimRewardsToSelf(
-        [aDai.address, aWETH.address, ],
+        [spDai.address, aWETH.address, ],
         amountToClaim,
         stkSpark Protocol.address
       );
 
-// claims all reward types for asset list [aDai, aWETH, ]
+// claims all reward types for asset list [spDai, aWETH, ]
 const claimAllRewards = await rewardsController.claimAllRewardsToSelf(
-				[aDai.address, aWeth.address, ]
+				[spDai.address, aWeth.address, ]
 			);
 ```
 
@@ -79,18 +79,10 @@ The `msg.sender` must be an authorised claimer set using setClaimer() method, vi
 {% endhint %}
 
 ```tsx
-// claims only stkSpark Protocol for asset list [aDai, aWETH, ]
-const claimStkSpark ProtocolOnBehalfOf = await rewardsController.claimRewardsOnBehalf(
-          [aDai.address],
-          MAX_UINT_AMOUNT,
-          userWithRewards.address,
-          claimer.address,
-          stkSpark Protocol.address
-        )
 
-// claims all reward types for asset list [aDai, aWETH, ]
+// claims all reward types for asset list [spDai, aWETH, ]
 const claimAllRewardsOnBehalfOf = await rewardsController.claimAllRewardsOnBehalf(
-                    [aDai.address],
+                    [spDai.address],
                     userWithRewards.address,
                     claimer.address
 		)
@@ -105,17 +97,10 @@ The `msg.sender` must match the user's address that has accrued the rewards
 {% endhint %}
 
 ```tsx
-// claims only stkSpark Protocol for asset list [aDai, aWETH, ] to receivingAccount
-const claimStkSpark Protocol = await rewardsController.claimRewards(
-        [aDai.address, aWETH.address, ],
-        amountToClaim,
-	receivingAccount.address
-        stkSpark Protocol.address
-      );
 
-// claims all reward types for asset list [aDai, aWETH, ] to receivingAccount
+// claims all reward types for asset list [spDai, aWETH, ] to receivingAccount
 const claimAllRewards = await rewardsController.claimAllRewards(
-				[aDai.address, aWeth.address, ],
+				[spDai.address, aWeth.address, ],
 				receivingAccount.address
 			);
 ```

@@ -111,7 +111,7 @@ import { fromRpcSig } from 'ethereumjs-util'
 // ... other imports
 import spTokenAbi from "./spTokenAbi.json"
 // ... setup your web3 provider
-const spTokenAddress = "ATOKEN_ADDRESS"
+const spTokenAddress = "SPTOKEN_ADDRESS"
 const spTokenContract = new web3.eth.Contract(spTokenAbi, spTokenAddress)
 const privateKey = "YOUR_PRIVATE_KEY_WITHOUT_0x"
 const chainId = 1
@@ -138,7 +138,7 @@ const permitParams = {
   },
   primaryType: "Permit",
   domain: {
-    name: "aTOKEN_NAME",
+    name: "spTOKEN_NAME",
     version: "1",
     chainId: chainId,
     verifyingContract: spTokenAddress,
@@ -177,7 +177,7 @@ await spTokenContract.methods
 
 *   How spToken earn interest? / How spToken balance increases?
 
-    [LendingPool](https://www.notion.so/LendingPool-990bd1490c2a4a038c139c974835332b) methods (deposit, withdraw, borrow, repay, liquidationCall) updates the state and cumulated liquidity index of the reserve once every block. SpToken's `balanceOf` method returns the balance computed based on `block.timestamp` and `liquidityIndex` of the underlying reserve and hence, returns the most up to date balance of account, which includes `principal + interest.`
+    [LendingPool](lending_pool.md) methods (deposit, withdraw, borrow, repay, liquidationCall) updates the state and cumulated liquidity index of the reserve once every block. SpToken's `balanceOf` method returns the balance computed based on `block.timestamp` and `liquidityIndex` of the underlying reserve and hence, returns the most up to date balance of account, which includes `principal + interest.`
 * LiquidityRate vs LiquidityIndex
 *   Can I transfer spTokens?
 
@@ -191,8 +191,8 @@ await spTokenContract.methods
 * What is the difference between ScaledBalance and Balance?
 *   Example please!
 
-    Let’s say you supply 1,000 DAI to the Spark [LendingPool](https://www.notion.so/LendingPool-990bd1490c2a4a038c139c974835332b), you will receive 1,000 aDAI (at 1:1 exchange rate).
+    Let’s say you supply 1,000 DAI to the Spark [LendingPool](lending_pool.md), you will receive 1,000 spDAI (at 1:1 exchange rate).
 
-    You can see your aDAI balance increasing right away.
+    You can see your spDAI balance increasing right away.
 
-    Now, say a month later your aDAI balance is 1,050. You could withdraw 1,050 DAI from LendingPool by burning 1050 aDAI.
+    Now, say a month later your spDAI balance is 1,050. You could withdraw 1,050 DAI from LendingPool by burning 1050 spDAI.

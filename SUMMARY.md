@@ -4,14 +4,10 @@
 
 * [Spark Protocol Overview](README.md)
 * [Contracts Overview](getting-started/contracts-overview.md)
-* [L2 Optimization](getting-started/l2-optimization/README.md)
-  * [L2Pool](getting-started/l2-optimization/l2pool.md)
-  * [L2Encoder](getting-started/l2-optimization/l2encoder.md)
 * [Protocol Features Summary](getting-started/protocol-feature-summary.md)
 
 ## What's New?
 
-* [Portal](whats-new/portal.md)
 * [Efficiency Mode (eMode)](whats-new/efficiency-mode-emode.md)
 * [Isolation Mode](whats-new/isolation-mode.md)
 * [Siloed Borrowing](whats-new/siloed-borrowing.md)
@@ -35,13 +31,13 @@
 ## Core Contracts
 
 * [ACLManager](core-contracts/aclmanager.md)
-* [Spark ProtocolProtocolDataProvider](core-contracts//spark-protocolprotocoldataprovider.md)
+* [AaveProtocolProtocolDataProvider](core-contracts//spark-protocolprotocoldataprovider.md)
 * [PoolAddressesProvider](core-contracts/pooladdressesprovider.md)
 * [PoolAddressesProviderRegistry](core-contracts/pooladdressesproviderregistry.md)
 * [PriceOracleSentinel](core-contracts/priceoraclesentinel.md)
 * [Pool](core-contracts/pool.md)
 * [PoolConfigurator](core-contracts/poolconfigurator.md)
-* [Spark ProtocolOracle](core-contracts//spark-protocoloracle.md)
+* [AaveProtocolOracle](core-contracts//spark-protocoloracle.md)
 
 ## Periphery Contracts
 
@@ -59,16 +55,8 @@
 
 ## Deployed Contracts
 
-* [Spark Protocol Testnet Addresses](deployed-contracts/v3-testnet-addresses.md)
-* [Spark Protocol Mainnet](deployed-contracts/v3-mainnet/README.md)
-  * [Optimism](deployed-contracts/v3-mainnet/optimism.md)
-  * [Arbitrum](deployed-contracts/v3-mainnet/arbitrum.md)
-  * [Polygon](deployed-contracts/v3-mainnet/polygon.md)
-  * [Fantom](deployed-contracts/v3-mainnet/fantom.md)
-  * [Avalanche](deployed-contracts/v3-mainnet/avalanche.md)
-  * [Harmony](deployed-contracts/v3-mainnet/harmony.md)
+* [Spark Protocol Testnet Addresses](deployed-contracts/testnet-addresses.md)
+* [Spark Protocol Mainnet](deployed-contracts/mainnet/README.md)
 * [Deployed Contracts](deployed-contracts/deployed-contracts.md)
 * [Security & Audits](deployed-contracts/security-and-audits.md)
 * [FAQ](https://docs.sparkprotocol.io/faq/)
-* [Careers](https://apply.workable.com/spark-protocol/)
-* [Bug Bounty](https://github.com/spark-protocol/bug-bounty)

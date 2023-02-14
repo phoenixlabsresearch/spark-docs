@@ -1,29 +1,7 @@
 # Security & Audits
 
-Spakr Protocol has been implemented with security as priority. The system has been designed to be safe and secure, and we have spent all the necessary resources in order to ensure that the protocol matches the highest security standards.
+Spark Protocol upholds the highest standars of security, inheriting MakerDAO's security practices and partnering with projects that share the same values.
 
-Below are the links to all audit reports and formal verification for Spark Protocol
+MakerDAO's security practices & audit reports.[Link to Maker's audits](https://security.makerdao.com/)
 
-TODO - add spark audit, keep aave audits?
-## Audit Round 1
-
-| Auditor       | Date       | Report                                                                                                               |
-| ------------- | ---------- | -------------------------------------------------------------------------------------------------------------------- |
-| ABDK          | 27-01-2022 | [ABDK\_AaveV3](https://github.com/aave/spark-protocol-core/blob/master/audits/27-01-2022\_ABDK\_AaveV3.pdf)                 |
-| OpenZeppelin  | 01-11-2021 | [OpenZeppelin\_AaveV3](https://github.com/aave/spark-protocol-core/blob/master/audits/01-11-2021\_OpenZeppelin\_AaveV3.pdf) |
-| Trail of Bits | 07-01-2022 | [TrailOfBits\_AaveV3](https://github.com/aave/spark-protocol-core/blob/master/audits/07-01-2022\_TrailOfBits\_AaveV3.pdf)   |
-| Peckshield    | 14-01-2022 | [PeckShield\_AaveV3](https://github.com/aave/spark-protocol-core/blob/master/audits/07-01-2022\_TrailOfBits\_AaveV3.pdf)    |
-
-
-
-## Audit Round 2
-
-| Auditor    | Date       | Report                                                                                                           |
-| ---------- | ---------- | ---------------------------------------------------------------------------------------------------------------- |
-| SigmaPrime | 27-01-2022 | [SigmaPrime\_AaveV3](https://github.com/aave/spark-protocol-core/blob/master/audits/27-01-2022\_SigmaPrime\_AaveV3.pdf) |
-
-
-
-## Formal Verification
-
-Formal verification by [Certora](https://github.com/aave/spark-protocol-core/blob/master/Certora/certora/Verification\_Report.pdf)
+Spark Lend is mostly based on the Aave v3 codebase which has been extensively audited. [Link to Aave v3's audits](https://docs.aave.com/developers/deployed-contracts/security-and-audits)

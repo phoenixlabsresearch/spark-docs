@@ -53,7 +53,7 @@ At initialization, `FLASHLOAN_PREMIUM_TO_PROTOCOL` is set to 0.
 ## Step by step
 
 ### 1. Setting Up
-
+TODO - replace repo links
 Your contract that receives the flash loaned amounts **must** conform to the [IFlashLoanSimpleReceiver.sol](https://github.com/spark-protocol/spark-protocol-core/blob/master/contracts/flashloan/interfaces/IFlashLoanSimpleReceiver.sol) or [IFlashLoanReceiver.sol](https://github.com/spark-protocol/spark-protocol-core/blob/master/contracts/flashloan/interfaces/IFlashLoanReceiver.sol) interface by implementing the relevant `executeOperation()` function.
 
 Also note that since the owed amounts will be _pulled_ from your contract, your contract must give allowance to the `Pool` to pull those funds to pay back the flash loan amount + premiums.

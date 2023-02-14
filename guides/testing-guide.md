@@ -6,7 +6,7 @@
 
 ## Test Markets
 
-The simplest way to interact with Spark Protocol in a test environment is to connect your wallet and use the app with fauceted funds on a test network. All test markets can be accessed from the [app](https://app.sparkprotocol.io) or from cloning/forking the [Spark Protocol frontend](https://github.com/spark-protocol/interface).
+The simplest way to interact with Spark Protocol in a test environment is to connect your wallet and use the app with fauceted funds on a test network. All test markets can be accessed from the [app](https://app.sparkprotocol.io) or from cloning/forking the [Spark Protocol frontend](https://github.com/spark-protocol/spark-interface).
 
 {% hint style="info" %}
 To interact with test markets make sure you toggle the **Testnet mode** _on_. The testnet option is available on [app](https://app.sparkprotocol.io) in top right ⚙️ drop-down-menu.
@@ -15,11 +15,7 @@ To interact with test markets make sure you toggle the **Testnet mode** _on_. Th
 First, you’ll need to add the test network to your wallet. You can directly add networks to your browser wallet with [Chainlist](https://chainlist.org).
 
 Next, you’ll need to faucet some base currency for the test network to pay gas for transactions. Here are links to available faucets (not operated or affiliated with Spark Protocol):
-
-* Kovan: [Paradigm](https://faucet.paradigm.xyz), [Chainlink](https://faucets.chain.link), [Buni](https://faucet.buni.finance)
-* Mumbai: [Polygon](https://faucet.polygon.technology), [Paradigm](https://faucet.paradigm.xyz)
-* Fuji: [Avalanche](https://faucet.avax-test.network), [Paradigm](https://faucet.paradigm.xyz), [Kyte](https://faucet.kyte.one)
-* Arbitrum Rinkeby: [Arbitrum](https://faucet.rinkeby.io)
+TODO - add faucets & check https://app.sparkprotocol.io/faucet/
 
 Each testnet market has a custom set of assets which can be fauceted from the Spark Protocol faucet. To access the faucet interface: switch to the market which you want to test, be sure your wallet is connected to the correct network and *testnet mode* is on. The faucet link is available at bottom of the supply column in _Dashboard_ or you can manually update url to `https://app.sparkprotocol.io/faucet/`.
 
@@ -31,7 +27,7 @@ E-Mode enables users to access a higher borrowing power when supplying and borro
 
 ### Isolation Mode
 
-One of the new features of V3 is isolation mode which allows the listing of assets with restricted borrowing capacity. Isolated assets are usually newly listed assets that you can only borrow up to a certain debt ceiling.
+Isolation mode which allows the listing of assets with restricted borrowing capacity. Isolated assets are usually newly listed assets that you can only borrow up to a certain debt ceiling.
 
 ### Supply and Repay With Permit
 
@@ -49,7 +45,7 @@ Tenderly is a tool for interacting and debugging smart contracts in a browser in
 
 To run simulations you will need two things, a contract address and contract abi.
 
-The contract addresses for each official and testnet market of the Spark Protocol can be found [here](https://docs.sparkprotocol.io/developers/deployed-contracts/deployed-contracts).
+The contract addresses for each official and testnet market of the Spark Protocol can be found [here](/deployed-contracts/deployed-contracts.md).
 
 The abi for each contract can obtained from a block explorer or compiling contract code directly.
 
