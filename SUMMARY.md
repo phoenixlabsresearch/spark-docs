@@ -7,12 +7,12 @@
 
 ## Features
 
-* [Efficiency Mode (eMode)](whats-new/efficiency-mode-emode.md)
-* [Isolation Mode](whats-new/isolation-mode.md)
-* [Siloed Borrowing](whats-new/siloed-borrowing.md)
-* [Supply Borrow Caps](whats-new/supply-borrow-caps.md)
-* [Repay With spTokens](whats-new/repay-with-sptokens.md)
-* [Multiple Rewards and Claim](whats-new/multiple-rewards-and-claim.md)
+* [Efficiency Mode (eMode)](features/efficiency-mode-emode.md)
+* [Isolation Mode](features/isolation-mode.md)
+* [Siloed Borrowing](features/siloed-borrowing.md)
+* [Supply Borrow Caps](features/supply-borrow-caps.md)
+* [Repay With spTokens](features/repay-with-sptokens.md)
+* [Multiple Rewards and Claim](features/multiple-rewards-and-claim.md)
 
 ## Guides
 

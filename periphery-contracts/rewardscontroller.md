@@ -1,7 +1,7 @@
 # RewardsController
 
 ## RewardsController
-
+TODO - update repo
 All rewards type enabled in Spark Protocol are managed by [RewardsDistributor.sol](https://github.com/spark-protocol/spark-protocol-periphery/blob/master/contracts/rewards/RewardsDistributor.sol). This is the contract used to check rewards data, user’s rewards balance and for claiming the rewards.
 
 ## Structs

@@ -1,6 +1,6 @@
-# SpToken
+# spToken
 
-## SPToken
+## spToken
 
 spTokens are tokens minted and burnt upon _supply_ and _withdraw_ of assets to a Spark Protocol market, which denote the amount of crypto assets supplied and the yield earned on those assets. The spTokens’ value is pegged to the value of the corresponding supplied asset at a 1:1 ratio and can be safely stored, transferred or traded. All yield collected by the spTokens' reserves are distributed to spToken holders directly by continuously increasing their wallet balance.
 

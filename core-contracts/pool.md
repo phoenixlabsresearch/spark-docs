@@ -193,7 +193,7 @@ Call Params
 Sets the `asset` of `msg.sender` to be used as collateral or not.
 
 {% hint style="info" %}
-An asset in [Isolation Mode](../whats-new/isolation-mode.md#isolation-mode) can be enabled to use as collateral only if no other asset is already enabled to use as collateral.
+An asset in [Isolation Mode](../features/isolation-mode.md#isolation-mode) can be enabled to use as collateral only if no other asset is already enabled to use as collateral.
 {% endhint %}
 
 {% hint style="info" %}
@@ -327,7 +327,7 @@ Call Params
 
 `mintUnbacked (asset, amount, onBehalfOf, referralCode)`
 
-Allows contracts, with `BRIDGE` role permission, to mint unbacked _spTokens_ to the `onBehalfOf` address. This method is part of the Spark Lend [Portal](../whats-new/portal.md) feature.
+Allows contracts, with `BRIDGE` role permission, to mint unbacked _spTokens_ to the `onBehalfOf` address. This method is part of the Spark Lend [Portal](../features/portal.md) feature.
 
 {% hint style="info" %}
 Only available to the addresses with`BRIDGE`role. Bridge addresses can be whitelisted by the governance.
@@ -344,7 +344,7 @@ Only available to the addresses with`BRIDGE`role. Bridge addresses can be whitel
 
 `backUnbacked (asset, amount, fee)`
 
-Allows contracts, with `BRIDGE` role permission, to back the currently unbacked spTokens with `amount` of underlying asset and pay `fee`. This method is part of the Spark Lend [Portal](../whats-new/portal.md) feature.
+Allows contracts, with `BRIDGE` role permission, to back the currently unbacked spTokens with `amount` of underlying asset and pay `fee`. This method is part of the Spark Lend [Portal](../features/portal.md) feature.
 
 {% hint style="info" %}
 Only available to the addresses with`BRIDGE`role. Bridge addresses can be whitelisted by the governance.
