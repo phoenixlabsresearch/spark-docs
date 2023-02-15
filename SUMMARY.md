@@ -48,8 +48,7 @@
 
 ## Deployed Contracts
 
-* [Testnet Addresses](deployed-contracts/spark-testnet-addresses.md)
+* [Testnet Addresses](deployed-contracts/testnet-addresses.md)
 * [Mainnet Addresses](deployed-contracts/mainnet/README.md)
-* [Deployed Contracts](deployed-contracts/deployed-contracts.md)
 * [Security & Audits](deployed-contracts/security-and-audits.md)
 * [FAQ](faq.md)

@@ -48,7 +48,7 @@ Only user accounts that have HF < 1 can be liquidated. There are multiple ways y
 ### GraphQL
 TODO - replace with upcoming subgraph
 1. Similarly to the sections above you will need to gather user account data and keep an index of the user data locally.
-2. SInce GraphQL does not provide real time calculated user data such as `healthFactor,` you will need to compute this locally. The easiest way is to use the [Spark Protocol-utilities](https://github.com/spark-protocol//spark-protocol-utilities#formatusersummary) sdk, which has methods to compute user summary data.
+2. SInce GraphQL does not provide real time calculated user data such as `healthFactor,` you will need to compute this locally. The easiest way is to use the [Spark Protocol-utilities](https://github.com/phoenixlabsresearch/spark-utilities#formatusersummary) sdk, which has methods to compute user summary data.
 
 ## Executing the liquidation call
 

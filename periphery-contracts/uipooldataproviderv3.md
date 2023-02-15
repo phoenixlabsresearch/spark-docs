@@ -4,7 +4,7 @@ TODO - update repo
 
 Contract that returns an array of all reserve or user data for a particular market, used by the [Spark Protocol Interface](https://github.com/spark-protocol/interface/) to display Markets and Dashboard data.
 
-The [Spark Protocol Utilities SDK](https://github.com/spark-protocol//spark-protocol-utilities#data-formatting-methods) includes an interface to make calls to this contract, and functions to format the response for frontend use-cases.
+The [Spark Protocol Utilities SDK](https://github.com/phoenixlabsresearch/spark-utilities#data-formatting-methods) includes an interface to make calls to this contract, and functions to format the response for frontend use-cases.
 
 ## Data Structures
 
