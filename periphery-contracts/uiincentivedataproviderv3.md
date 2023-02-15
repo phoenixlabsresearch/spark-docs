@@ -2,7 +2,7 @@
 
 ## UiIncentiveDataProviderV3
 
-Contract that returns an array of all reserve incentives or user claimable rewards within a particular market, used by the [Spark Protocol Interface](https://github.com/spark-protocol/spark-interface/) to display incentives data.
+Contract that returns an array of all reserve incentives or user claimable rewards within a particular market, used by the [Spark Protocol Interface](https://github.com/phoenixlabsresearch/spark-interface/) to display incentives data.
 
 The [Spark Protocol Utilities SDK](https://github.com/phoenixlabsresearch/spark-utilities#data-formatting-methods) includes an interface to make calls to this contract, and functions to format the response for frontend use-cases.
 

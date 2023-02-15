@@ -4,7 +4,7 @@ The special type of spToken that are minted and burned upon supply and withdraw 
 
 _DelegationAwarespToken_ enables/implements all the methods available for spTokens with additional [`delegateUnderlyingTo`](delegationawarespToken.md#delegateunderlyingto) method.
 
-Refer [_spToken_](spToken.md) docs for full list of contract api
+Refer [_spToken_](sptoken.md) docs for full list of contract api
 
 ### delegateUnderlyingTo
 

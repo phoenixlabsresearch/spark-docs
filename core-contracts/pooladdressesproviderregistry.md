@@ -6,7 +6,7 @@ A register of the active `[PoolAddressesProvider](./pooladdressesprovider.md)` c
 
 For example, the Pool address for the main market is different from the Pool address for the AMM market.
 
-The source code can be found on [Github](https://github.com/spark/spark-lend/blob/master/contracts/protocol/configuration/PoolAddressesProviderRegistry.sol).
+The source code can be found on [Github](https://github.com/aave/aave-v3-core/blob/master/contracts/protocol/configuration/PoolAddressesProviderRegistry.sol).
 
 ## View Methods
 

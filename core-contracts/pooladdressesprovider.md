@@ -8,7 +8,7 @@ Addresses register of the protocol for a particular market. This contract is imm
 Whenever the \`Pool\` contract is needed, we recommended you fetch the correct address from the \`PoolAddressesProvider\` smart contract.
 {% endhint %}
 
-The source code can be [found on Github](https://github.com/spark/spark-lend/blob/master/contracts/protocol/configuration/PoolAddressesProvider.sol)
+The source code can be [found on Github](https://github.com/aave/aave-v3-core/blob/master/contracts/protocol/configuration/PoolAddressesProvider.sol)
 
 ## View Methods
 
