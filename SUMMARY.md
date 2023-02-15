@@ -30,7 +30,7 @@
 * [PriceOracleSentinel](core-contracts/priceoraclesentinel.md)
 * [Pool](core-contracts/pool.md)
 * [PoolConfigurator](core-contracts/poolconfigurator.md)
-* [AaveProtocolOracle](core-contracts/aaveoracle.md)
+* [AaveOracle](core-contracts/aaveoracle.md)
 
 ## Periphery Contracts
 

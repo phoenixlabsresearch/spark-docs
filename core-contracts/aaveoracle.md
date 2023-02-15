@@ -1,6 +1,6 @@
-# SparkOracle
+# AaveOracle
 
-## SparkOracle
+## AaveOracle
 
 Contract to get asset prices, manage price sources and update the fallback oracle.
 
@@ -93,7 +93,7 @@ Call Params
 
 ## ABI
 <details>
-<summary>SparkOracle ABI</summary>
+<summary>AaveOracle ABI</summary>
 
 ```
 [
