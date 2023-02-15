@@ -1,8 +1,8 @@
 # UiPoolDataProviderV3
-TODO - update repo
+
 ## UiPoolDataProviderV3
 
-Contract that returns an array of all reserve or user data for a particular market, used by the [Spark Protocol Interface](https://github.com/spark-protocol/interface/) to display Markets and Dashboard data.
+Contract that returns an array of all reserve or user data for a particular market, used by the [Spark Protocol Interface](https://github.com/phoenixlabsresearch/spark-interface) to display Markets and Dashboard data.
 
 The [Spark Protocol Utilities SDK](https://github.com/phoenixlabsresearch/spark-utilities#data-formatting-methods) includes an interface to make calls to this contract, and functions to format the response for frontend use-cases.
 
@@ -10,7 +10,7 @@ The [Spark Protocol Utilities SDK](https://github.com/phoenixlabsresearch/spark-
 
 ### AggregatedReserveData
 
-View fields of `AggregatedReserveData` defined at [Github](https://github.com/spark-protocol/spark-protocol-periphery/blob/ed38b6719d4bbd9d17dfbd6b9849326a0bdeea2c/contracts/misc/interfaces/IUiPoolDataProviderV3.sol#L8).
+View fields of `AggregatedReserveData` defined at [Github](https://github.com/aave/aave-v3-periphery/blob/ed38b6719d4bbd9d17dfbd6b9849326a0bdeea2c/contracts/misc/interfaces/IUiPoolDataProviderV3.sol#L8).
 
 ### UserReserveData
 

@@ -7,7 +7,7 @@ _**Access Control List Manager**_ is the main registry of system roles and permi
 ACLManager allows a _**Role Admin**_ to manage roles. _**Role Admin**_ is itself a role that is managed by the `DEFAULT_ADMIN_ROLE`.
 
 `DEFAULT_ADMIN_ROLE` is held by the _ACLAdmin,_ which is initialised in `PoolAddressesProvider`.
-TODO - Governance update
+
 {% hint style="info" %}
 ℹ️ On Ethereum chain `PoolAddressesProvider`, is owned by Maker Governance. In networks other than Ethereum, either the *Crosschain Governance Bridges* or *Community Multisigs* are used to manage the `PoolAddressesProvider`.
 {% endhint %}

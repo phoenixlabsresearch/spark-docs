@@ -77,8 +77,7 @@ One way to calculate the profitability is the following:
 ### How is health factor calculated?
 
 The health factor is calculated from the user's total collateral, i.e. all reserves for which `usageAsCollateral` is enabled, balance (in ETH) multiplied by the liquidation threshold percentage for all the user's outstanding assets, divided by the user's total borrow balance across all reserves (in ETH).
-TODO - replace with repo
-This can be calculated both off-chain and on-chain, see [Spark Protocol-utilities](https://github.com/spark-protocol/spark-protocol-utilities/blob/cdf8a8bf87c8848a2f0865c58defbd04e0871171/packages/math-utils/src/pool-math.ts#L169) and [GenericLogic Library](https://github.com/spark-protocol/spark-protocol-core/blob/c8722965501b182f6ab380db23e52983eb87e406/contracts/protocol/libraries/logic/GenericLogic.sol#L183) respectively for reference.
+This can be calculated both off-chain and on-chain, see [Spark Protocol-utilities](https://github.com/phoenixlabsresearch/spark-utilities/blob/cdf8a8bf87c8848a2f0865c58defbd04e0871171/packages/math-utils/src/pool-math.ts#L169) and [GenericLogic Library](https://github.com/aave/aave-v3-core/blob/c8722965501b182f6ab380db23e52983eb87e406/contracts/protocol/libraries/logic/GenericLogic.sol#L183) respectively for reference.
 
 ### How is liquidation bonus determined?
 
