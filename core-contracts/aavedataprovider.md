@@ -1,11 +1,10 @@
-# SparkProtocolDataProvider
+# AaveProtocolDataProvider
 
-## SparkProtocolDataProvider
+## AaveProtocolDataProvider
 
 Peripheral contract to collect and pre-process information from the Pool.
 
-TODO - update code link
-Code available on [github](https://github.com/spark/spark-lend/blob/master/contracts/misc/SparkProtocolDataProvider.sol#L164).
+Code available on [github](https://github.com/aave/aave-v3-core/blob/master/contracts/misc/AaveProtocolDataProvider.sol#L164).
 
 ### Methods
 

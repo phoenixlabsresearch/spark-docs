@@ -24,7 +24,7 @@
 ## Core Contracts
 
 * [ACLManager](core-contracts/aclmanager.md)
-* [AaveProtocolProtocolDataProvider](core-contracts/aavedataprovider.md)
+* [AaveDataProvider](core-contracts/aavedataprovider.md)
 * [PoolAddressesProvider](core-contracts/pooladdressesprovider.md)
 * [PoolAddressesProviderRegistry](core-contracts/pooladdressesproviderregistry.md)
 * [PriceOracleSentinel](core-contracts/priceoraclesentinel.md)
