@@ -24,18 +24,13 @@
 ## Core Contracts
 
 * [ACLManager](core-contracts/aclmanager.md)
-* [AaveProtocolProtocolDataProvider](core-contracts//spark-protocolprotocoldataprovider.md)
+* [AaveProtocolProtocolDataProvider](core-contracts/aavedataprovider.md)
 * [PoolAddressesProvider](core-contracts/pooladdressesprovider.md)
 * [PoolAddressesProviderRegistry](core-contracts/pooladdressesproviderregistry.md)
 * [PriceOracleSentinel](core-contracts/priceoraclesentinel.md)
 * [Pool](core-contracts/pool.md)
 * [PoolConfigurator](core-contracts/poolconfigurator.md)
-* [AaveProtocolOracle](core-contracts//spark-protocoloracle.md)
-* 
-*
-* 
-* 
-* 
+* [AaveProtocolOracle](core-contracts/aaveoracle.md)
 
 ## Periphery Contracts
 
@@ -47,14 +42,14 @@
 
 ## Tokens
 
-* [SpToken](tokens/sptoken.md)
+* [spToken](tokens/sptoken.md)
 * [DebtToken](tokens/debttoken.md)
 * [DelegationAwareSpToken](tokens/delegationawaresptoken.md)
 
 ## Deployed Contracts
 
-* [Spark Protocol Testnet Addresses](deployed-contracts/spark-testnet-addresses.md)
-* [Spark Protocol Mainnet](deployed-contracts/mainnet/README.md)
+* [Testnet Addresses](deployed-contracts/spark-testnet-addresses.md)
+* [Mainnet Addresses](deployed-contracts/mainnet/README.md)
 * [Deployed Contracts](deployed-contracts/deployed-contracts.md)
 * [Security & Audits](deployed-contracts/security-and-audits.md)
 * [FAQ](faq.md)
