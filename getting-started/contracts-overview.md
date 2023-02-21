@@ -2,7 +2,7 @@
 
 ## Contracts Overview
 
-The Spark Protocol contracts are divided in _two repositories:_
+The Spark Protocol contracts are divided in _three repositories:_
 
 * [sparklend](https://github.com/phoenixlabsresearch/sparklend): Hosts deployment scripts and any custom contracts. Most of the Spark Lend logic is inside the Aave repositories.
 * [aave-v3-core](https://github.com/aave/aave-v3-core): Hosts core protocol contracts that contains the logic for - supply, borrow, liquidation, flashloan, sp/s/v tokens, pool configuration, oracles and interest rate strategies.
