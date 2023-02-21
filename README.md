@@ -70,8 +70,7 @@ Spark Protocol offers the option to have _**multiple rewards**_ per token. Now, 
 ## Spark Interface
 
 The Spark interface is hosted on [IPFS](https://ipfs.tech/) in a decentralized manner. Spark maps the following DNS names to the Cloudflare IPFS gateway:
-* [https://app.sparkprotocol.io](https://app.sparkprotocol.io) will always point to the latest main IPFS hash with disabled test networks
-* [https://staging.sparkprotocol.io](https://staging.sparkprotocol.io) will always point to the latest main IPFS hash with all networks enabled
+* [https://app.sparkprotocol.io](https://app.sparkprotocol.io) will always point to the latest main IPFS hash
 
 ### IPFS Troubleshooting
 

@@ -4,8 +4,9 @@
 
 The Spark Protocol contracts are divided in _two repositories:_
 
-* [sparklend](https://github.com/phoenixlabsresearch/sparklend): Hosts core protocol contracts that contains the logic for - supply, borrow, liquidation, flashloan, sp/s/v tokens, pool configuration, oracles and interest rate strategies.
-* [sparklend-periphery](https://github.com/phoenixlabsresearch/sparklend-periphery): rewards, ui data provider, incentive data provider, wallet balance provider and WETH gateway.
+* [sparklend](https://github.com/phoenixlabsresearch/sparklend): Hosts deployment scripts and any custom contracts. Most of the Spark Lend logic is inside the Aave repositories.
+* [aave-v3-core](https://github.com/aave/aave-v3-core): Hosts core protocol contracts that contains the logic for - supply, borrow, liquidation, flashloan, sp/s/v tokens, pool configuration, oracles and interest rate strategies.
+* [aave-v3-periphery](https://github.com/aave/aave-v3-periphery): rewards, ui data provider, incentive data provider, wallet balance provider and WETH gateway.
 
 ## Core Contracts
 
