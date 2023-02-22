@@ -49,6 +49,6 @@
 ## Deployed Contracts
 
 * [Testnet Addresses](deployed-contracts/testnet-addresses.md)
-* [Mainnet Addresses](deployed-contracts/mainnet/README.md)
+* [Mainnet Addresses](deployed-contracts/mainnet-addresses.md)
 * [Security & Audits](deployed-contracts/security-and-audits.md)
 * [FAQ](faq.md)
