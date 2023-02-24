@@ -4,8 +4,6 @@
 
 * Ethereum - Goerli
 
-TODO - update contracts
-
 {% hint style="warning" %}
 For assets on testnets, we use different versions of the token (e.g. testnet Dai) which are mintableERC20. This is to ensure enough liquidity for our reserves and to easily mint more tokens when needed.
 {% endhint %}
