@@ -8,6 +8,8 @@
 For assets on testnets, we use different versions of the token (e.g. testnet Dai) which are mintableERC20. This is to ensure enough liquidity for our reserves and to easily mint more tokens when needed.
 {% endhint %}
 
+{% tabs %}
+{% tab title="All contracts" %}
 | name                          | address                                    |
 | ----------------------------- | ------------------------------------------ |
 | incentivesImpl                | 0xBD7D6a9ad7865463DE44B05F04559f65e3B11704 |
@@ -73,26 +75,30 @@ For assets on testnets, we use different versions of the token (e.g. testnet Dai
 | WETH\_interestRateStrategy    | 0x1A19CBc89B07C342df47A0B8Ceb8d9602969D65c |
 | sDAI\_interestRateStrategy    | 0x457970Ed7295Acb73c08903c4Ebbff6067E8851E |
 | wstETH\_aToken                | 0x3B543388106fdC4EC99B56Cb18c9F9949C8CfFE6 |
+{% endtab %}
 
-
-{% tabs %} 
 {% tab title="DAI" %}
-| name                          | address                                    |
-| ----------------------------- | ------------------------------------------ |
-| DAI\_oracle                   | 0x0d79df66BE487753B02D015Fb622DED7f0E9798d |
-| DAI\_token                    | 0x11fE4B6AE13d2a6055C8D9cF65c55bac32B5d844 |
-| DAI\_aToken                   | 0x4480b29AB7a1b0761e6d0d480325de28B7266d73 |
-| DAI\_stableDebtToken          | 0xD72630D78157E1a2feD7A329873Bfd496704403D |
-| DAI\_variableDebtToken        | 0xa99d874d26BdfD94d474Aa04f4f7861DCD55Cbf4 |
-| DAI\_interestRateStrategy     | 0xF42baf47019c71afd6FCe31134Da0232640A034a |
+| name                      | address                                    |
+| ------------------------- | ------------------------------------------ |
+| DAI\_oracle               | 0x0d79df66BE487753B02D015Fb622DED7f0E9798d |
+| DAI\_token                | 0x11fE4B6AE13d2a6055C8D9cF65c55bac32B5d844 |
+| DAI\_aToken               | 0x4480b29AB7a1b0761e6d0d480325de28B7266d73 |
+| DAI\_stableDebtToken      | 0xD72630D78157E1a2feD7A329873Bfd496704403D |
+| DAI\_variableDebtToken    | 0xa99d874d26BdfD94d474Aa04f4f7861DCD55Cbf4 |
+| DAI\_interestRateStrategy | 0xF42baf47019c71afd6FCe31134Da0232640A034a |
+
+
 {% endtab %}
 
 {% tab title="sDAI" %}
-| name                          | address                                    |
-| ----------------------------- | ------------------------------------------ |
-| sDAI\_stableDebtToken         | 0x3D99F176df9a93e5e038aBFF160Fa9AEBc3a9891 |
-| sDAI\_token                   | 0xD8134205b0328F5676aaeFb3B2a0DC15f4029d8C |
-| sDAI\_oracle                  | 0xdF53542ff2262166c5009ddE52D3abAc313d651c |
-| sDAI\_variableDebtToken       | 0xa85f5A5d3FBa8B6987492e8113ff7cd9AdE5c780 |
-| sDAI\_interestRateStrategy    | 0x457970Ed7295Acb73c08903c4Ebbff6067E8851E |
+| name                       | address                                    |
+| -------------------------- | ------------------------------------------ |
+| sDAI\_stableDebtToken      | 0x3D99F176df9a93e5e038aBFF160Fa9AEBc3a9891 |
+| sDAI\_token                | 0xD8134205b0328F5676aaeFb3B2a0DC15f4029d8C |
+| sDAI\_oracle               | 0xdF53542ff2262166c5009ddE52D3abAc313d651c |
+| sDAI\_variableDebtToken    | 0xa85f5A5d3FBa8B6987492e8113ff7cd9AdE5c780 |
+| sDAI\_interestRateStrategy | 0x457970Ed7295Acb73c08903c4Ebbff6067E8851E |
+
+
 {% endtab %}
+{% endtabs %}
