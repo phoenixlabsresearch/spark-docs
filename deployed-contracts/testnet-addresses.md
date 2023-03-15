@@ -96,3 +96,4 @@ For assets on testnets, we use different versions of the token (e.g. testnet Dai
 | sDAI\_oracle                  | 0xdF53542ff2262166c5009ddE52D3abAc313d651c |
 | sDAI\_variableDebtToken       | 0xa85f5A5d3FBa8B6987492e8113ff7cd9AdE5c780 |
 | sDAI\_interestRateStrategy    | 0x457970Ed7295Acb73c08903c4Ebbff6067E8851E |
+{% endtab %}
