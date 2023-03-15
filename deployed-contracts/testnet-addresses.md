@@ -75,8 +75,8 @@ For assets on testnets, we use different versions of the token (e.g. testnet Dai
 | wstETH\_aToken                | 0x3B543388106fdC4EC99B56Cb18c9F9949C8CfFE6 |
 
 
-
-{% tabs %} {% tab title="DAI" %}
+{% tabs %} 
+{% tab title="DAI" %}
 | name                          | address                                    |
 | ----------------------------- | ------------------------------------------ |
 | DAI\_oracle                   | 0x0d79df66BE487753B02D015Fb622DED7f0E9798d |
@@ -85,7 +85,6 @@ For assets on testnets, we use different versions of the token (e.g. testnet Dai
 | DAI\_stableDebtToken          | 0xD72630D78157E1a2feD7A329873Bfd496704403D |
 | DAI\_variableDebtToken        | 0xa99d874d26BdfD94d474Aa04f4f7861DCD55Cbf4 |
 | DAI\_interestRateStrategy     | 0xF42baf47019c71afd6FCe31134Da0232640A034a |
-
 {% endtab %}
 
 {% tab title="sDAI" %}
