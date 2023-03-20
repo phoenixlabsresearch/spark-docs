@@ -1,0 +1,23 @@
+{
+  "name": "spark-docs",
+  "version": "1.0.0",
+  "description": "The Spark Protocol is decentralised non-custodial liquidity protocol where users can participate as suppliers, borrowers or liquidators. Suppliers provide liquidity to a market and can earn interest on the crypto assets provided, while borrowers are able to borrow in an overcollateralized fashion. Borrowers can also engage in one-block borrow transactions (”flash loans”), which do not require overcollateralization.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phoenixlabsresearch/spark-docs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phoenixlabsresearch/spark-docs/issues"
+  },
+  "homepage": "https://github.com/phoenixlabsresearch/spark-docs#readme",
+  "devDependencies": {
+    "honkit": "^4.0.4"
+  }
+}

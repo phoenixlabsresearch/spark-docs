@@ -77,7 +77,7 @@ For assets on testnets, we use different versions of the token (e.g. testnet Dai
 | wstETH\_variableDebtToken     | 0x0CdDE6Ea82c4876eb25F63Ce7e3F9125F74419eb |
 {% endtab %}
 
-{% tab title="Tokens" %}
+{% tab title="Assets" %}
 #### DAI
 | name                      | address                                    |
 | ------------------------- | ------------------------------------------ |
@@ -96,9 +96,8 @@ For assets on testnets, we use different versions of the token (e.g. testnet Dai
 | sDAI\_oracle               | 0xdF53542ff2262166c5009ddE52D3abAc313d651c |
 | sDAI\_variableDebtToken    | 0xa85f5A5d3FBa8B6987492e8113ff7cd9AdE5c780 |
 | sDAI\_interestRateStrategy | 0x457970Ed7295Acb73c08903c4Ebbff6067E8851E |
-{% endtab %}
 
-{% tab title="wETH" %}
+#### WETH
 | WETH\_aToken                  | 0x80059c1c8a9F4ADbA7Bc258fB520556b57F959ea |
 | WETH\_interestRateStrategy    | 0x1A19CBc89B07C342df47A0B8Ceb8d9602969D65c |
 | WETH\_oracle                  | 0xD4a33860578De61DBAbDc8BFdb98FD742fA7028e |
@@ -106,27 +105,24 @@ For assets on testnets, we use different versions of the token (e.g. testnet Dai
 | WETH\_token                   | 0x7D5afF7ab67b431cDFA6A94d50d3124cC4AB2611 |
 | WETH\_variableDebtToken       | 0xA2c1e8332Ce1724a8307c881f2e52e0342af4FDb |
 | wethGateway                   | 0xe6fC577E87F7c977c4393300417dCC592D90acF8 |
-{% endtab %}
 
-{% tab title="wstETH" %}
+#### wstETH
 | wstETH\_aToken                | 0x3B543388106fdC4EC99B56Cb18c9F9949C8CfFE6 |
 | wstETH\_interestRateStrategy  | 0x4e7f9129F8e343de454dd74EfB7B5FBd40a0154e |
 | wstETH\_oracle                | 0xD4a33860578De61DBAbDc8BFdb98FD742fA7028e |
 | wstETH\_stableDebtToken       | 0x3eE94865a8E17D41E5272937dDc0C0890134c0d3 |
 | wstETH\_token                 | 0x6E4F1e8d4c5E5E6e2781FD814EE0744cc16Eb352 |
 | wstETH\_variableDebtToken     | 0x0CdDE6Ea82c4876eb25F63Ce7e3F9125F74419eb |
-{% endtab %}
 
-{% tab title="USDC" %}
+#### USDC
 | USDC\_aToken                  | 0xac50e6d40Dc6416DC0e0DB61c267a2246d976555 |
 | USDC\_interestRateStrategy    | 0xB87E634e4663CcAab11d8B2C5585473E5B5ecF18 |
 | USDC\_oracle                  | 0x62a2DF3DDb738Cf8f4AA28192017f47aa2fD9041 |
 | USDC\_stableDebtToken         | 0x92B499bcF85E98dC988d2056A166EeB01F6d4e4A |
 | USDC\_token                   | 0x6Fb5ef893d44F4f88026430d82d4ef269543cB23 |
 | USDC\_variableDebtToken       | 0x7ad729a082D1E674ADb52467Efc87B6b3970e492 |
-{% endtab %}
 
-{% tab title="wBTC" %}
+#### wBTC
 | WBTC\_aToken                  | 0xf468801a42E4E14B4076ED3D51CDb5459cBf986a |
 | WBTC\_interestRateStrategy    | 0xcaBdf020232A190491a3f3ECCAd3247f82dD4fA2 |
 | WBTC\_oracle                  | 0xA39434A63A52E749F02807ae27335515BA4b07F7 |
