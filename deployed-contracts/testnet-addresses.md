@@ -9,7 +9,7 @@ For assets on testnets, we use different versions of the token (e.g. testnet Dai
 {% endhint %}
 
 {% tabs %}
-{% tab title="all addresses" %}
+{% tab title="All Addresses" %}
 | name                          | address                                    |
 |-------------------------------|--------------------------------------------|
 | aaveOracle                    | 0x5Cd822d9a4421be687930498ec4B498EB972ad29 |
@@ -146,7 +146,7 @@ For assets on testnets, we use different versions of the token (e.g. testnet Dai
 | WBTC\_variableDebtToken       | 0x1a301B0a5fDD2865eb258d5FAE7356891bB3fa8a |
 {% endtab %}
 
-{% tab title="Config & Pool Logic" %}
+{% tab title="Configuration & Pool Logic" %}
 | name                       | address                                    |
 | -------------------------- | ------------------------------------------ |
 | aclManager                    | 0xb137E7d16564c81ae2b0C8ee6B55De81dd46ECe5 |
