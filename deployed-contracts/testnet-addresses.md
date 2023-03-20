@@ -78,6 +78,13 @@ For assets on testnets, we use different versions of the token (e.g. testnet Dai
 {% endtab %}
 
 {% tab title="Assets" %}
+#### Tokenisation
+| name                      | address                                    |
+| ------------------------- | ------------------------------------------ |
+| aTokenImpl                    | 0x35542cbc5730d5e39CF79dDBd8976ac984ca109b |
+| stableDebtTokenImpl           | 0x571501be53711c372cE69De51865dD34B87698D5 |
+| variableDebtTokenImpl         | 0xb9E6DBFa4De19CCed908BcbFe1d015190678AB5f |
+
 #### DAI
 | name                      | address                                    |
 | ------------------------- | ------------------------------------------ |
@@ -98,6 +105,8 @@ For assets on testnets, we use different versions of the token (e.g. testnet Dai
 | sDAI\_interestRateStrategy | 0x457970Ed7295Acb73c08903c4Ebbff6067E8851E |
 
 #### WETH
+| name                       | address                                    |
+| -------------------------- | ------------------------------------------ |
 | WETH\_aToken                  | 0x80059c1c8a9F4ADbA7Bc258fB520556b57F959ea |
 | WETH\_interestRateStrategy    | 0x1A19CBc89B07C342df47A0B8Ceb8d9602969D65c |
 | WETH\_oracle                  | 0xD4a33860578De61DBAbDc8BFdb98FD742fA7028e |
@@ -107,6 +116,8 @@ For assets on testnets, we use different versions of the token (e.g. testnet Dai
 | wethGateway                   | 0xe6fC577E87F7c977c4393300417dCC592D90acF8 |
 
 #### wstETH
+| name                       | address                                    |
+| -------------------------- | ------------------------------------------ |
 | wstETH\_aToken                | 0x3B543388106fdC4EC99B56Cb18c9F9949C8CfFE6 |
 | wstETH\_interestRateStrategy  | 0x4e7f9129F8e343de454dd74EfB7B5FBd40a0154e |
 | wstETH\_oracle                | 0xD4a33860578De61DBAbDc8BFdb98FD742fA7028e |
@@ -115,6 +126,8 @@ For assets on testnets, we use different versions of the token (e.g. testnet Dai
 | wstETH\_variableDebtToken     | 0x0CdDE6Ea82c4876eb25F63Ce7e3F9125F74419eb |
 
 #### USDC
+| name                       | address                                    |
+| -------------------------- | ------------------------------------------ |
 | USDC\_aToken                  | 0xac50e6d40Dc6416DC0e0DB61c267a2246d976555 |
 | USDC\_interestRateStrategy    | 0xB87E634e4663CcAab11d8B2C5585473E5B5ecF18 |
 | USDC\_oracle                  | 0x62a2DF3DDb738Cf8f4AA28192017f47aa2fD9041 |
@@ -123,6 +136,8 @@ For assets on testnets, we use different versions of the token (e.g. testnet Dai
 | USDC\_variableDebtToken       | 0x7ad729a082D1E674ADb52467Efc87B6b3970e492 |
 
 #### wBTC
+| name                       | address                                    |
+| -------------------------- | ------------------------------------------ |
 | WBTC\_aToken                  | 0xf468801a42E4E14B4076ED3D51CDb5459cBf986a |
 | WBTC\_interestRateStrategy    | 0xcaBdf020232A190491a3f3ECCAd3247f82dD4fA2 |
 | WBTC\_oracle                  | 0xA39434A63A52E749F02807ae27335515BA4b07F7 |
@@ -131,33 +146,30 @@ For assets on testnets, we use different versions of the token (e.g. testnet Dai
 | WBTC\_variableDebtToken       | 0x1a301B0a5fDD2865eb258d5FAE7356891bB3fa8a |
 {% endtab %}
 
-{% tab title="Configuration" %}
+{% tab title="Config & Pool Logic" %}
+| name                       | address                                    |
+| -------------------------- | ------------------------------------------ |
 | aclManager                    | 0xb137E7d16564c81ae2b0C8ee6B55De81dd46ECe5 |
 | poolAddressesProvider         | 0x026a5B6114431d8F3eF2fA0E1B2EDdDccA9c540E |
 | poolAddressesProviderRegistry | 0x1ad570fDEA255a3c1d8Cf56ec76ebA2b7bFDFfea |
-{% endtab %}
-
-{% tab title="Pool Logic" %}
 | pool                          | 0x26ca51Af4506DE7a6f0785D20CD776081a05fF6d |
 | poolImpl                      | 0xF1E57711Eb5F897b415de1aEFCB64d9BAe58D312 |
 | poolConfigurator              | 0xe0C7ec61cC47e7c02b9B24F03f75C7BC406CCA98 |
 | poolConfiguratorImpl          | 0xde8E55f0D5bFC2Cb7aEe94c8062B6E1487A17F29 |
 {% endtab %}
 
-{% tab title="Tokenization" %}
-| aTokenImpl                    | 0x35542cbc5730d5e39CF79dDBd8976ac984ca109b |
-| stableDebtTokenImpl           | 0x571501be53711c372cE69De51865dD34B87698D5 |
-| variableDebtTokenImpl         | 0xb9E6DBFa4De19CCed908BcbFe1d015190678AB5f |
-{% endtab %}
-
-{% tab title="Peripheral Contracts" %}
+{% tab title="Misc" %}
+#### Peripheral Contracts
+| name                       | address                                    |
+| -------------------------- | ------------------------------------------ |
 | uiIncentiveDataProvider       | 0x1472B7d120ab62D60f60e1D804B3858361c3C475 |
 | uiPoolDataProvider            | 0x36eddc380C7f370e5f05Da5Bd7F970a27f063e39 |
 | wethGateway                   | 0xe6fC577E87F7c977c4393300417dCC592D90acF8 |
 | walletBalanceProvider         | 0x261135877A92B42183c998bFB8580558a28377a6 |
-{% endtab %}
 
-{% tab title="Misc" %}
+#### Misc
+| name                       | address                                    |
+| -------------------------- | ------------------------------------------ |
 | aaveOracle                    | 0x5Cd822d9a4421be687930498ec4B498EB972ad29 |
 | protocolDataProvider          | 0x86C71796CcDB31c3997F8Ec5C2E3dB3e9e40b985 |
 | admin                         | 0x5DCdbD3cCF9B09EAAD03bc5f50fA2B3d3ACA0121 |
