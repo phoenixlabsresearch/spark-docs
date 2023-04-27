@@ -1,5 +1,7 @@
 # Mainnet Addresses
 
+The Spark Protocol is available on Ethereum mainnet.
+
 ## Mainnet Addresses
 
 {% tabs %}
