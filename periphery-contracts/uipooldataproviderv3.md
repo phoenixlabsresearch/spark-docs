@@ -2,9 +2,9 @@
 
 ## UiPoolDataProviderV3
 
-Contract that returns an array of all reserve or user data for a particular market, used by the [Spark Protocol Interface](https://github.com/phoenixlabsresearch/spark-interface) to display Markets and Dashboard data.
+Contract that returns an array of all reserve or user data for a particular market, used by the [Spark Protocol Interface](https://github.com/marsfoundation/spark-interface) to display Markets and Dashboard data.
 
-The [Spark Protocol Utilities SDK](https://github.com/phoenixlabsresearch/spark-utilities#data-formatting-methods) includes an interface to make calls to this contract, and functions to format the response for frontend use-cases.
+The [Spark Protocol Utilities SDK](https://github.com/marsfoundation/spark-utilities#data-formatting-methods) includes an interface to make calls to this contract, and functions to format the response for frontend use-cases.
 
 ## Data Structures
 
