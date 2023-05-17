@@ -46,7 +46,8 @@ Only user accounts that have HF < 1 can be liquidated. There are multiple ways y
 2. When you have the user's address, you can simply call [`getUserAccountData()`](../core-contracts/pool.md#getuseraccountdata), to read the user's current healthFactor. If the HF < 1, then the account can be liquidated.
 
 ### GraphQL
-TODO - replace with upcoming subgraph
+Messari subgraph: [The Graph Hosted Service](https://thegraph.com/hosted-service/subgraph/messari/spark-lend-ethereum), [Messari Subgraphs](https://subgraphs.messari.io/subgraph?endpoint=messari/spark-lend-ethereum&tab=protocol)
+
 1. Similarly to the sections above you will need to gather user account data and keep an index of the user data locally.
 2. SInce GraphQL does not provide real time calculated user data such as `healthFactor,` you will need to compute this locally. The easiest way is to use the [Spark Protocol-utilities](https://github.com/marsfoundation/spark-utilities#formatusersummary) sdk, which has methods to compute user summary data.
 
