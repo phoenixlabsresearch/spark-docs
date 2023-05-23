@@ -13,7 +13,7 @@ The Spark Protocol is available on Ethereum mainnet.
 | admin                         | 0xBE8E3e3618f7474F8cB1d074A26afFef007E98FB |
 | aTokenImpl                    | 0x6175ddEc3B9b38c88157C10A01ed4A3fa8639cC6 |
 | DAI\_aToken                   | 0x4DEDf26112B3Ec8eC46e7E31EA5e123490B05B8B |
-| DAI\_interestRateStrategy     | 0xfD0cc3F39d48a2393443e18E7d3758FC4c3c5c37 |
+| DAI\_interestRateStrategy     | 0x113dc45c524404F91DcbbAbB103506bABC8Df0FE |
 | DAI\_oracle                   | 0xAed0c38402a5d19df6E4c03F4E2DceD6e29c1ee9 |
 | DAI\_stableDebtToken          | 0xfe2B7a7F4cC0Fb76f7Fc1C6518D586F1e4559176 |
 | DAI\_token                    | 0x6B175474E89094C44Da98b954EedeAC495271d0F |
@@ -90,7 +90,7 @@ The Spark Protocol is available on Ethereum mainnet.
 | DAI\_aToken               | 0x4DEDf26112B3Ec8eC46e7E31EA5e123490B05B8B |
 | DAI\_stableDebtToken      | 0xfe2B7a7F4cC0Fb76f7Fc1C6518D586F1e4559176 |
 | DAI\_variableDebtToken    | 0xf705d2B7e92B3F38e6ae7afaDAA2fEE110fE5914 |
-| DAI\_interestRateStrategy | 0xfD0cc3F39d48a2393443e18E7d3758FC4c3c5c37 |
+| DAI\_interestRateStrategy | 0x113dc45c524404F91DcbbAbB103506bABC8Df0FE |
 
 **sDAI**
 

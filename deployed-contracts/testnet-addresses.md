@@ -15,7 +15,7 @@ For assets on testnets, we use different versions of the token (e.g. testnet Dai
 | admin                         | 0x5DCdbD3cCF9B09EAAD03bc5f50fA2B3d3ACA0121 |
 | aTokenImpl                    | 0x35542cbc5730d5e39CF79dDBd8976ac984ca109b |
 | DAI\_aToken                   | 0x4480b29AB7a1b0761e6d0d480325de28B7266d73 |
-| DAI\_interestRateStrategy     | 0xF42baf47019c71afd6FCe31134Da0232640A034a |
+| DAI\_interestRateStrategy     | 0x491acea4126E48e9A354b64869AE16b2f27BE333 |
 | DAI\_oracle                   | 0x0d79df66BE487753B02D015Fb622DED7f0E9798d |
 | DAI\_stableDebtToken          | 0xD72630D78157E1a2feD7A329873Bfd496704403D |
 | DAI\_token                    | 0x11fE4B6AE13d2a6055C8D9cF65c55bac32B5d844 |
@@ -93,7 +93,7 @@ For assets on testnets, we use different versions of the token (e.g. testnet Dai
 | DAI\_aToken               | 0x4480b29AB7a1b0761e6d0d480325de28B7266d73 |
 | DAI\_stableDebtToken      | 0xD72630D78157E1a2feD7A329873Bfd496704403D |
 | DAI\_variableDebtToken    | 0xa99d874d26BdfD94d474Aa04f4f7861DCD55Cbf4 |
-| DAI\_interestRateStrategy | 0xF42baf47019c71afd6FCe31134Da0232640A034a |
+| DAI\_interestRateStrategy | 0x491acea4126E48e9A354b64869AE16b2f27BE333 |
 
 **sDAI**
 
