@@ -32,7 +32,7 @@ For assets on testnets, we use different versions of the token (e.g. testnet Dai
 | poolAddressesProviderRegistry | 0x1ad570fDEA255a3c1d8Cf56ec76ebA2b7bFDFfea |
 | poolConfigurator              | 0xe0C7ec61cC47e7c02b9B24F03f75C7BC406CCA98 |
 | poolConfiguratorImpl          | 0xde8E55f0D5bFC2Cb7aEe94c8062B6E1487A17F29 |
-| poolImpl                      | 0xF1E57711Eb5F897b415de1aEFCB64d9BAe58D312 |
+| poolImpl                      | 0xe7EA57b22D5F496BF9Ca50a7830547b704Ecb91F |
 | protocolDataProvider          | 0x86C71796CcDB31c3997F8Ec5C2E3dB3e9e40b985 |
 | sDAI\_aToken                  | 0xEF0523D2803f40629dc30c7A666a950F3d2976DA |
 | sDAI\_interestRateStrategy    | 0x457970Ed7295Acb73c08903c4Ebbff6067E8851E |
