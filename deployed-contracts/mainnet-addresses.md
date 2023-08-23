@@ -155,7 +155,7 @@ The Spark Protocol is available on Ethereum mainnet.
 | poolAddressesProvider         | 0x02C3eA4e34C0cBd694D2adFa2c690EECbC1793eE |
 | poolAddressesProviderRegistry | 0x03cFa0C4622FF84E50E75062683F44c9587e6Cc1 |
 | pool                          | 0xC13e21B648A5Ee794902342038FF3aDAB66BE987 |
-| poolImpl                      | 0x62DA45546A0F87b23941FFE5CA22f9D2A8fa7DF3 |
+| poolImpl                      | 0x8115366Ca7Cf280a760f0bC0F6Db3026e2437115 |
 | poolConfigurator              | 0x542DBa469bdE58FAeE189ffB60C6b49CE60E0738 |
 | poolConfiguratorImpl          | 0xF7b656C95420194b79687fc86D965FB51DA4799F |
 {% endtab %}

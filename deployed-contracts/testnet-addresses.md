@@ -158,7 +158,7 @@ For assets on testnets, we use different versions of the token (e.g. testnet Dai
 | poolAddressesProvider         | 0x026a5B6114431d8F3eF2fA0E1B2EDdDccA9c540E |
 | poolAddressesProviderRegistry | 0x1ad570fDEA255a3c1d8Cf56ec76ebA2b7bFDFfea |
 | pool                          | 0x26ca51Af4506DE7a6f0785D20CD776081a05fF6d |
-| poolImpl                      | 0xF1E57711Eb5F897b415de1aEFCB64d9BAe58D312 |
+| poolImpl                      | 0xe7EA57b22D5F496BF9Ca50a7830547b704Ecb91F |
 | poolConfigurator              | 0xe0C7ec61cC47e7c02b9B24F03f75C7BC406CCA98 |
 | poolConfiguratorImpl          | 0xde8E55f0D5bFC2Cb7aEe94c8062B6E1487A17F29 |
 {% endtab %}
