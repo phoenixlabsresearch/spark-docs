@@ -6,7 +6,8 @@
 
 * [SparkLend Overview](README.md)
 * [Contracts Overview](sparklend/contracts-overview.md)
-* [FAQ](sparklend/faq.md)
+* [FAQ](sparklend/faq/README.md)
+  * [Borrowing](sparklend/faq/borrowing.md)
 * [Features](sparklend/features/README.md)
   * [Efficiency Mode (eMode)](sparklend/features/efficiency-mode-emode.md)
   * [Isolation Mode](sparklend/features/isolation-mode.md)
