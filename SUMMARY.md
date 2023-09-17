@@ -29,6 +29,7 @@
   * [Testing Guide](sparklend/guides/testing-guide.md)
   * [Troubleshooting Errors](sparklend/guides/troubleshooting-errors.md)
 * [Contracts](sparklend/contracts/README.md)  
+  * [Contracts Overview](sparklend/contracts/README.md)
   * [Core Contracts](sparklend/contracts/core-contracts/README.md)
     * [ACLManager](sparklend/contracts/core-contracts/aclmanager.md)
     * [AaveDataProvider](sparklend/contracts/core-contracts/aavedataprovider.md)
