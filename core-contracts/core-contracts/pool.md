@@ -13,19 +13,19 @@ The `pool.sol` contract is the main user facing contract of the protocol. It exp
 The `referralCode` is emitted in Supply event and can be for third party referral integrations. To activate referral feature and obtain a unique referral code, integrators need to submit proposal to Maker Governance.
 
 {% hint style="warning" %}
-When supplying, the `Pool` contract must have**`allowance()`**to spend funds on behalf of**`msg.sender`** for at-least**`amount`** for the **`asset`** being supplied. This can be done via the standard ERC20 `approve()`method on the underlying token contract
+When supplying, the `Pool` contract must have\*\*`allowance()`**to spend funds on behalf of**`msg.sender`\*\* for at-least\*\*`amount`\*\* for the **`asset`** being supplied. This can be done via the standard ERC20 `approve()`method on the underlying token contract
 {% endhint %}
 
 {% hint style="info" %}
 Referral supply is currently inactive, you can pass `0` as `referralCode`. This program may be activated in the future through an Maker Governance proposal
 {% endhint %}
 
-| Param Name   | Type    | Description                                                                                                                                        |
-| ------------ | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| asset        | address | address of the asset being supplied to the pool.                                                                                                   |
-| amount       | uint256 | amount of asset being supplied.                                                                                                                    |
+| Param Name   | Type    | Description                                                                                                                                         |
+| ------------ | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| asset        | address | address of the asset being supplied to the pool.                                                                                                    |
+| amount       | uint256 | amount of asset being supplied.                                                                                                                     |
 | onBehalfOf   | address | <p>address that will receive the corresponding spTokens.<br><br>Note: only the onBehalfOf address will be able to withdraw asset from the pool.</p> |
-| referralCode | uint16  | unique code for 3rd party referral program integration. Use 0 for no referral.                                                                     |
+| referralCode | uint16  | unique code for 3rd party referral program integration. Use 0 for no referral.                                                                      |
 
 ### supplyWithPermit
 
@@ -47,7 +47,7 @@ Call Params
 | ------------ | ------- | -------------------------------------------------------------------------------------------- |
 | asset        | address | Address of underlying asset being supplied. Same asset as used in permit s,v,r               |
 | amount       | uint256 | Amount of asset to be supplied and signed for approval. Same amount as used in permit s,v,r  |
-| onBehalfOf   | address | Address that will receive the spTokens.                                                       |
+| onBehalfOf   | address | Address that will receive the spTokens.                                                      |
 | referralCode | uint16  | <p>unique code for 3rd party referral program integration.<br><br>Use 0 for no referral.</p> |
 | deadline     | uint256 | unix timestamp up-till which signature will be valid                                         |
 | permitV      | uint8   | Signature parameter v                                                                        |
@@ -70,7 +70,7 @@ Call Params
 
 | Name   | Type    | Description                                                                                    |
 | ------ | ------- | ---------------------------------------------------------------------------------------------- |
-| asset  | address | address of the underlying asset, not the spToken                                                |
+| asset  | address | address of the underlying asset, not the spToken                                               |
 | amount | uint256 | amount deposited, expressed in wei units. Use `type(uint).max` to withdraw the entire balance. |
 | to     | address | address that will receive the `asset`                                                          |
 
@@ -87,8 +87,6 @@ Note: If `onBehalfOf` is not same as `msg.sender`, then `onBehalfOf` must have s
 {% hint style="info" %}
 Referral program is currently inactive, you can pass `0` as `referralCode`. This program may be activated in the future through an Maker Governance proposal
 {% endhint %}
-
-
 
 Call Params
 
@@ -107,7 +105,7 @@ Call Params
 Repays `onBehalfOf`'s debt `amount` of `asset` which has a `rateMode`.
 
 {% hint style="warning" %}
-When repaying, the `Pool` contract must have**`allowance()`**to spend funds on behalf of**`msg.sender`** for at-least**`amount`** for the **`asset`** you are repaying with. This can be done via the standard ERC20 `approve()`method on the underlying token contract.
+When repaying, the `Pool` contract must have\*\*`allowance()`**to spend funds on behalf of**`msg.sender`\*\* for at-least\*\*`amount`\*\* for the **`asset`** you are repaying with. This can be done via the standard ERC20 `approve()`method on the underlying token contract.
 {% endhint %}
 
 {% hint style="info" %}
@@ -116,12 +114,12 @@ Referral program is currently inactive, you can pass `0` as `referralCode`. This
 
 Call Params
 
-| Name       | Type    | Description                                                                                                                                                                                                                                                                                                 |
-| ---------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| asset      | address | address of the underlying asset                                                                                                                                                                                                                                                                             |
+| Name       | Type    | Description                                                                                                                                                                                                                                                                                           |
+| ---------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| asset      | address | address of the underlying asset                                                                                                                                                                                                                                                                       |
 | amount     | uint256 | <p>Amount of underlying asset being repaid.<br>Use uint(-1) to repay the entire debt, ONLY when the repayment is not executed on behalf of a 3rd party.<br>In case of repayments on behalf of another user, it's recommended to send an _amount slightly higher than the current borrowed amount.</p> |
-| rateMode   | uint256 | <p>the type of debt being repaid.<br>Stable: 1, Variable: 2</p>                                                                                                                                                                                                                                             |
-| onBehalfOf | address | <p>address of user who will incur the debt.<br>Use msg.sender when not calling on behalf of a different user.</p>                                                                                                                                                                                           |
+| rateMode   | uint256 | <p>the type of debt being repaid.<br>Stable: 1, Variable: 2</p>                                                                                                                                                                                                                                       |
+| onBehalfOf | address | <p>address of user who will incur the debt.<br>Use msg.sender when not calling on behalf of a different user.</p>                                                                                                                                                                                     |
 
 ### repayWithPermit
 
@@ -140,7 +138,7 @@ Call Params
 | asset            | address | Address of underlying asset being supplied. Same asset as used in permit s,v,r              |
 | amount           | uint256 | Amount of asset to be supplied and signed for approval. Same amount as used in permit s,v,r |
 | interestRateMode | uint256 | <p>the type of debt being repaid.<br>Stable: 1, Variable: 2</p>                             |
-| onBehalfOf       | address | Address that will receive the spTokens.                                                      |
+| onBehalfOf       | address | Address that will receive the spTokens.                                                     |
 | deadline         | uint256 | unix timestamp up-till which signature will be valid                                        |
 | permitV          | uint8   | Signature parameter v                                                                       |
 | permitR          | bytes32 | Signature parameter r                                                                       |
@@ -154,11 +152,11 @@ Allows user to repay with _spTokens_ of the underlying debt asset without any ap
 
 Call Params
 
-| Param Name       | Type    | Description                                                                                           |
-| ---------------- | ------- | ----------------------------------------------------------------------------------------------------- |
-| asset            | address | Address of the underlying asset to be repaid                                                          |
+| Param Name       | Type    | Description                                                                                            |
+| ---------------- | ------- | ------------------------------------------------------------------------------------------------------ |
+| asset            | address | Address of the underlying asset to be repaid                                                           |
 | amount           | uint256 | <p>Amount of underlying asset being repaid.<br>Use uint256(-1) to pay without leaving spToken dust</p> |
-| interestRateMode | uint256 | <p>Interest rate mode of the debt position<br>1 - stable<br>2 - variable</p>                          |
+| interestRateMode | uint256 | <p>Interest rate mode of the debt position<br>1 - stable<br>2 - variable</p>                           |
 
 ### swapBorrowRateMode
 
@@ -193,7 +191,7 @@ Call Params
 Sets the `asset` of `msg.sender` to be used as collateral or not.
 
 {% hint style="info" %}
-An asset in [Isolation Mode](../features/isolation-mode.md#isolation-mode) can be enabled to use as collateral only if no other asset is already enabled to use as collateral.
+An asset in [Isolation Mode](../../features/isolation-mode.md#isolation-mode) can be enabled to use as collateral only if no other asset is already enabled to use as collateral.
 {% endhint %}
 
 {% hint style="info" %}
@@ -229,12 +227,12 @@ Liquidators must \`approve()\` the \`Pool\` contract to use \`debtToCover\` of t
 
 Call Params
 
-| Name          | Type    | Description                                                                                                                               |
-| ------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| collateral    | address | address of the collateral reserve                                                                                                         |
-| debt          | address | address of the debt reserve                                                                                                               |
-| user          | address | address of the borrower                                                                                                                   |
-| debtToCover   | uint256 | amount of asset debt that the liquidator will repay                                                                                       |
+| Name           | Type    | Description                                                                                                                                |
+| -------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| collateral     | address | address of the collateral reserve                                                                                                          |
+| debt           | address | address of the debt reserve                                                                                                                |
+| user           | address | address of the borrower                                                                                                                    |
+| debtToCover    | uint256 | amount of asset debt that the liquidator will repay                                                                                        |
 | receiveSpToken | bool    | if true, the user receives the spTokens equivalent of the purchased collateral. If false, the user receives the underlying asset directly. |
 
 ### flashLoan
@@ -261,7 +259,7 @@ Call Params
 | --------------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | receiverAddress | address    | <p>Address of the contract that will receive the flash borrowed funds.<br>Must implement the IFlashLoanReceiver interface.</p>                                                                                          |
 | assets          | address\[] | Addresses of the underlying assets that will be flash borrowed                                                                                                                                                          |
-| amounts         | uint256\[] | <p>Amounts of assets being requested for flash borrow.<br>This needs to contain the same number of entries as assets.</p>                                                                                              |
+| amounts         | uint256\[] | <p>Amounts of assets being requested for flash borrow.<br>This needs to contain the same number of entries as assets.</p>                                                                                               |
 | modes           | uint256\[] | <p>the types of debt position to open if the flashloan is not returned.<br>0: no open debt. (amount+fee must be paid in this case or revert)<br>1: stable mode debt<br>2: variable mode debt</p>                        |
 | onBehalfOf      | address    | <p>if the associated mode is not0 then the incurred debt will be applied to the onBehalfOfaddress.<br>Note: onBehalfOf must already have approved sufficient borrow allowance of the associated asset to msg.sender</p> |
 | params          | bytes      | Arbitrary bytes-encoded params that will be passed to executeOperation() method of the receiver contract.                                                                                                               |
@@ -327,7 +325,7 @@ Call Params
 
 `mintUnbacked (asset, amount, onBehalfOf, referralCode)`
 
-Allows contracts, with `BRIDGE` role permission, to mint unbacked _spTokens_ to the `onBehalfOf` address. This method is part of the Spark Lend [Portal](../features/portal.md) feature.
+Allows contracts, with `BRIDGE` role permission, to mint unbacked _spTokens_ to the `onBehalfOf` address. This method is part of the Spark Lend [Portal](../../features/portal.md) feature.
 
 {% hint style="info" %}
 Only available to the addresses with`BRIDGE`role. Bridge addresses can be whitelisted by the governance.
@@ -337,14 +335,14 @@ Only available to the addresses with`BRIDGE`role. Bridge addresses can be whitel
 | ------------ | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | asset        | address | address of the underlying asset token                                                                                                                                        |
 | amount       | uint256 | the amount to be minted                                                                                                                                                      |
-| onBehalfOf   | address | the address which will receive the spTokens                                                                                                                                   |
+| onBehalfOf   | address | the address which will receive the spTokens                                                                                                                                  |
 | referralCode | uint16  | <p>Code used to register the integrator originating the operation, for potential rewards<br><br>0 if the action is executed directly by the user, without any middle-man</p> |
 
 ### backUnbacked
 
 `backUnbacked (asset, amount, fee)`
 
-Allows contracts, with `BRIDGE` role permission, to back the currently unbacked spTokens with `amount` of underlying asset and pay `fee`. This method is part of the Spark Lend [Portal](../features/portal.md) feature.
+Allows contracts, with `BRIDGE` role permission, to back the currently unbacked spTokens with `amount` of underlying asset and pay `fee`. This method is part of the Spark Lend [Portal](../../features/portal.md) feature.
 
 {% hint style="info" %}
 Only available to the addresses with`BRIDGE`role. Bridge addresses can be whitelisted by the governance.
@@ -392,12 +390,12 @@ Return Values
 | currentStableBorrowRate     | uint128 | current stable borrow rate. Expressed in ray                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | lastUpdateTimestamp         | uint40  | timestamp of when reserve data was last updated. Used for yield calculation.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | id                          | uint16  | reserve’s position in the list of active reserves.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| spTokenAddress               | address | address of associated spToken                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| spTokenAddress              | address | address of associated spToken                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | stableDebtTokenAddress      | address | address of associated stable debt token                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | variableDebtTokenAddress    | address | address of associated variable debt token                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | interestRateStrategyAddress | address | address of interest rate strategy.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | accruedToTreasury           | uint128 | the current treasury balance (scaled)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| unbacked                    | uint128 | the outstanding unbacked spTokens minted through the bridging feature                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| unbacked                    | uint128 | the outstanding unbacked spTokens minted through the bridging feature                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | isolationModeTotalDebt      | uint128 | the outstanding debt borrowed against this asset in isolation mode                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
 ### getUserAccountData
@@ -529,7 +527,9 @@ A part of this premium is added to reserve's liquidity index i.e. paid to the li
 Returns the percent of flashloan premium that is accrued to the treasury.
 
 ## ABI
+
 <details>
+
 <summary>Pool ABI</summary>
 
 ```
@@ -2249,4 +2249,5 @@ Returns the percent of flashloan premium that is accrued to the treasury.
     }
 ]
 ```
+
 </details>

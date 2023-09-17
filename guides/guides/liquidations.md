@@ -1,12 +1,12 @@
 # Liquidations
 
-The health of the Spark Protocol is dependent on the 'health' of the collateralised positions within the protocol, also known as the 'health factor'. When the 'health factor' of an account's total loans is below 1, anyone can make a `liquidationCall()`  to the [`Pool`](../core-contracts/pool.md#liquidationcall) contract, pay back part of the debt owed and receive discounted collateral in return (also known as the liquidation bonus).&#x20;
+The health of the Spark Protocol is dependent on the 'health' of the collateralised positions within the protocol, also known as the 'health factor'. When the 'health factor' of an account's total loans is below 1, anyone can make a `liquidationCall()` to the [`Pool`](../../core-contracts/core-contracts/pool.md#liquidationcall) contract, pay back part of the debt owed and receive discounted collateral in return (also known as the liquidation bonus).
 
 This incentivises third parties to participate in the health of the overall protocol, by acting in their own interest (to receive the discounted collateral) and as a result, ensure borrows are sufficiently collateralize.
 
 There are multiple ways to participate in liquidations:
 
-1. By calling the liquidationCall() directly in the [Pool](../core-contracts/pool.md#liquidationcall) contract.
+1. By calling the liquidationCall() directly in the [Pool](../../core-contracts/core-contracts/pool.md#liquidationcall) contract.
 2. By creating your own automated bot or system to liquidate loans.
 
 {% hint style="warning" %}
@@ -26,7 +26,7 @@ When making a `liquidationCall()`, you must:
 * Know the valid debt amount and asset (i.e. `debtToCover` & `debtAsset`)
   * If the HF is above `CLOSE_FACTOR_HF_THRESHOLD`, then only a maximum of 50% (i.e. `DEFAULT_LIQUIDATION_CLOSE_FACTOR`) of the debt can be liquidated per valid `liquidationCall()`
   * If the HF is below `CLOSE_FACTOR_HF_THRESHOLD`, then 100% (i.e. `MAX_LIQUIDATION_CLOSE_FACTOR`) of the debt can be liquidated in single valid `liquidationCall()`
-  * &#x20;You can set the `debtToCover` to `uint(-1)` and the protocol will proceed with the highest possible liquidation allowed by the close factor.
+  * You can set the `debtToCover` to `uint(-1)` and the protocol will proceed with the highest possible liquidation allowed by the close factor.
   * You must already have sufficient balance of the debt asset, which will be used by the `liquidationCall` to pay back the debt. You can use `flashLoan` for liquidations 😉
 * Know the collateral asset `collateralAsset` you closing, i.e. the asset that the user has `backing` their outstanding loan that you will receive as a `bonus`.
 * Whether you want to receive _spTokens_ or the underlying asset after a successful `liquidationCall()` .
@@ -43,10 +43,11 @@ Only user accounts that have HF < 1 can be liquidated. There are multiple ways y
 
 1. To gather user account data from on-chain data, one way would be to monitor emitted events from the protocol and keep an up to date index of user data locally.
    1. Events are emitted each time a user interacts with the protocol (supply, borrow, repay, withdraw etc.)
-2. When you have the user's address, you can simply call [`getUserAccountData()`](../core-contracts/pool.md#getuseraccountdata), to read the user's current healthFactor. If the HF < 1, then the account can be liquidated.
+2. When you have the user's address, you can simply call [`getUserAccountData()`](../../core-contracts/core-contracts/pool.md#getuseraccountdata), to read the user's current healthFactor. If the HF < 1, then the account can be liquidated.
 
 ### GraphQL
-Messari subgraph: [The Graph Hosted Service](https://thegraph.com/hosted-service/subgraph/messari/spark-lend-ethereum), [Messari Subgraphs](https://subgraphs.messari.io/subgraph?endpoint=messari/spark-lend-ethereum&tab=protocol)
+
+Messari subgraph: [The Graph Hosted Service](https://thegraph.com/hosted-service/subgraph/messari/spark-lend-ethereum), [Messari Subgraphs](https://subgraphs.messari.io/subgraph?endpoint=messari/spark-lend-ethereum\&tab=protocol)
 
 1. Similarly to the sections above you will need to gather user account data and keep an index of the user data locally.
 2. SInce GraphQL does not provide real time calculated user data such as `healthFactor,` you will need to compute this locally. The easiest way is to use the [Spark Protocol-utilities](https://github.com/marsfoundation/spark-utilities#formatusersummary) sdk, which has methods to compute user summary data.
@@ -55,10 +56,10 @@ Messari subgraph: [The Graph Hosted Service](https://thegraph.com/hosted-service
 
 Once you have the account(s) to liquidate, you will need to calculate the amount of collateral that can be liquidated:
 
-1. Use [`getUserReserveData()`](../periphery-contracts/uipooldataproviderv3.md#getuserreservesdata)
+1. Use [`getUserReserveData()`](../../periphery-contracts/uipooldataproviderv3.md#getuserreservesdata)
 2. Max debt that be cleared by single liquidation call is given by the `DEFAULT_LIQUIDATION_CLOSE_FACTOR`(when `CLOSE_FACTOR_HF_THRESHOLD < HF < 1`) or `MAX_LIQUIDATION_CLOSE_FACTOR` (when `HF < CLOSE_FACTOR_HF_THRESHOLD`)
    1. `debtToCover = (userStableDebt + userVariableDebt) * LiquidationCloseFactor`
-   2. &#x20;You can pass `uint(-1)`, i.e. `MAX_UINT`, as the `debtToCover` to liquidate the maximum amount allowed.
+   2. You can pass `uint(-1)`, i.e. `MAX_UINT`, as the `debtToCover` to liquidate the maximum amount allowed.
 3. Max amount of collateral that can be liquidated to cover debt is given by the current _liquidationBonus_ for the reserves that have `usageAsCollateralEnabled` as true.
    1. `maxAmountOfCollateralToLiquidate = (debtAssetPrice * debtToCover * liquidationBonus)/ collateralPrice`
 
@@ -68,7 +69,7 @@ One way to calculate the profitability is the following:
 
 1. Store and retrieve each collateral's relevant details such as address, decimals used and liquidation bonus.
 2. Get the user's collateral balance (spTokenBalance).
-3. Get the asset's price according to the Spark Protocol's oracle contract using [`getAssetPrice()`](../core-contracts/spark-protocoloracle.md#getassetprice).
+3. Get the asset's price according to the Spark Protocol's oracle contract using [`getAssetPrice()`](../../core-contracts/spark-protocoloracle.md#getassetprice).
 4. The maximum collateral bonus received on liquidation is given by the `maxAmountOfCollateralToLiquidate * (1 - liquidationBonus) * collateralAssetPriceEth`
 5. The maximum cost of your transaction will be you gas price multiplied by the amount of gas used. You should be able to get a good estimation of the gas amount used by calling `estimateGas` via your web3 provider.
 6. Your approximate profit will be the value of the collateral bonus (4) minus the cost of your transaction (5).
@@ -77,8 +78,7 @@ One way to calculate the profitability is the following:
 
 ### How is health factor calculated?
 
-The health factor is calculated from the user's total collateral, i.e. all reserves for which `usageAsCollateral` is enabled, balance (in ETH) multiplied by the liquidation threshold percentage for all the user's outstanding assets, divided by the user's total borrow balance across all reserves (in ETH).
-This can be calculated both off-chain and on-chain, see [Spark Protocol-utilities](https://github.com/marsfoundation/spark-utilities/blob/cdf8a8bf87c8848a2f0865c58defbd04e0871171/packages/math-utils/src/pool-math.ts#L169) and [GenericLogic Library](https://github.com/aave/aave-v3-core/blob/c8722965501b182f6ab380db23e52983eb87e406/contracts/protocol/libraries/logic/GenericLogic.sol#L183) respectively for reference.
+The health factor is calculated from the user's total collateral, i.e. all reserves for which `usageAsCollateral` is enabled, balance (in ETH) multiplied by the liquidation threshold percentage for all the user's outstanding assets, divided by the user's total borrow balance across all reserves (in ETH). This can be calculated both off-chain and on-chain, see [Spark Protocol-utilities](https://github.com/marsfoundation/spark-utilities/blob/cdf8a8bf87c8848a2f0865c58defbd04e0871171/packages/math-utils/src/pool-math.ts#L169) and [GenericLogic Library](https://github.com/aave/aave-v3-core/blob/c8722965501b182f6ab380db23e52983eb87e406/contracts/protocol/libraries/logic/GenericLogic.sol#L183) respectively for reference.
 
 ### How is liquidation bonus determined?
 

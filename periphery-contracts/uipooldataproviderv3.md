@@ -14,26 +14,26 @@ View fields of `AggregatedReserveData` defined at [Github](https://github.com/aa
 
 ### UserReserveData
 
-| Name                            | Type    | Description                                                                            |
-| ------------------------------- | ------- | -------------------------------------------------------------------------------------- |
-| underlyingAsset                 | address | Address of the underlying asset supplied/borrowed                                      |
-| scaledSpTokenBalance             | uint256 | <p>scaled balance of spToken<br><br><em>scaledBalance = balance/liquidityIndex</em></p> |
-| usageAsCollateralEnabledOnUser  | bool    | true if supplied asset is enabled to be used as collateral                             |
-| stableBorrowRate                | uint256 | Stable rate at which underlying asset is borrowed by the user. 0 ⇒ no debt             |
-| scaledVariableDebt              | uint256 | <p>scaled balance of vToken<br><br><em>scaledBalance = balance/liquidityIndex</em></p> |
-| principalStableDebt             | uint256 | Principal amount borrowed at stable rate                                               |
-| stableBorrowLastUpdateTimestamp | uint256 | unix timestamp of last update on user’s stable borrow position.                        |
+| Name                            | Type    | Description                                                                             |
+| ------------------------------- | ------- | --------------------------------------------------------------------------------------- |
+| underlyingAsset                 | address | Address of the underlying asset supplied/borrowed                                       |
+| scaledSpTokenBalance            | uint256 | <p>scaled balance of spToken<br><br><em>scaledBalance = balance/liquidityIndex</em></p> |
+| usageAsCollateralEnabledOnUser  | bool    | true if supplied asset is enabled to be used as collateral                              |
+| stableBorrowRate                | uint256 | Stable rate at which underlying asset is borrowed by the user. 0 ⇒ no debt              |
+| scaledVariableDebt              | uint256 | <p>scaled balance of vToken<br><br><em>scaledBalance = balance/liquidityIndex</em></p>  |
+| principalStableDebt             | uint256 | Principal amount borrowed at stable rate                                                |
+| stableBorrowLastUpdateTimestamp | uint256 | unix timestamp of last update on user’s stable borrow position.                         |
 
 ### BaseCurrencyInfo
 
 Info data struct for base currency of the Spark Protocol market.
 
-| Name                              | Type    | Description                                       |
-| --------------------------------- | ------- | ------------------------------------------------- |
-| marketReferenceCurrencyUnit       | uint256 | Reference aka base currency of the Spark Protocol market    |
-| marketReferenceCurrencyPriceInUsd | int256  | Price of reference aka base currency in USD       |
-| networkBaseTokenPriceInUsd        | int256  | Price of native token of the network/chain in USD |
-| networkBaseTokenPriceDecimals     | uint8   | Decimals of native token of the network/chain     |
+| Name                              | Type    | Description                                              |
+| --------------------------------- | ------- | -------------------------------------------------------- |
+| marketReferenceCurrencyUnit       | uint256 | Reference aka base currency of the Spark Protocol market |
+| marketReferenceCurrencyPriceInUsd | int256  | Price of reference aka base currency in USD              |
+| networkBaseTokenPriceInUsd        | int256  | Price of native token of the network/chain in USD        |
+| networkBaseTokenPriceDecimals     | uint8   | Decimals of native token of the network/chain            |
 
 ## Methods
 
@@ -41,22 +41,24 @@ Info data struct for base currency of the Spark Protocol market.
 
 `function getReservesList(IPoolAddressesProvider provider)`
 
-Returns the list of initialised reserves in the Pool associated with the given [`provider`](../core-contracts/pooladdressesprovider.md).
+Returns the list of initialised reserves in the Pool associated with the given [`provider`](../core-contracts/core-contracts/pooladdressesprovider.md).
 
 ### getReservesData
 
 `function getReservesData(IPoolAddressesProvider provider)`
 
-Returns `BaseCurrencyInfo` of the Pool and `AggregatedReserveData[]` for all the initialised reserves in the Pool associated with the given [`provider`](../core-contracts/pooladdressesprovider.md).
+Returns `BaseCurrencyInfo` of the Pool and `AggregatedReserveData[]` for all the initialised reserves in the Pool associated with the given [`provider`](../core-contracts/core-contracts/pooladdressesprovider.md).
 
 ### getUserReservesData
 
 `function getUserReservesData(IPoolAddressesProvider provider, address user)`
 
-Returns `UserReserveData[]` for all user reserves in the Pool associated with the given [`provider`](../core-contracts/pooladdressesprovider.md).
+Returns `UserReserveData[]` for all user reserves in the Pool associated with the given [`provider`](../core-contracts/core-contracts/pooladdressesprovider.md).
 
 ## ABI
+
 <details>
+
 <summary>UiPoolDataProviderV3</summary>
 
 ```
@@ -548,4 +550,5 @@ Returns `UserReserveData[]` for all user reserves in the Pool associated with th
     }
 ]
 ```
+
 </details>

@@ -12,15 +12,15 @@ Flash-loan allows users to access liquidity of the pool (only for reserves for w
 
 Spark Protocol offers two options for flash loans:
 
-* [`flashLoan`](../core-contracts/pool.md#flashloan): Allows borrower to access liquidity of _**multiple reserves**_ in single _flashLoan_ transaction. The borrower also has an option to open stable or variabled rate debt position backed by supplied collateral or credit delegation in this case.\
-  NOTE: _flash loan fee_ is waived for approved `flashBorrowers` (managed by [ACLManager](../core-contracts/aclmanager.md))
-* [`flashLoanSimple`](../core-contracts/pool.md#flashloansimple): Allows borrower to access liquidity of _single reserve_ for the transaction. In this case flash loan fee is not waived nor can borrower open any debt position at the end of the transaction. This method is gas efficient for those trying take advantage of simple flash loan with single reserve asset.
+* [`flashLoan`](../../core-contracts/core-contracts/pool.md#flashloan): Allows borrower to access liquidity of _**multiple reserves**_ in single _flashLoan_ transaction. The borrower also has an option to open stable or variabled rate debt position backed by supplied collateral or credit delegation in this case.\
+  NOTE: _flash loan fee_ is waived for approved `flashBorrowers` (managed by [ACLManager](../../core-contracts/core-contracts/aclmanager.md))
+* [`flashLoanSimple`](../../core-contracts/core-contracts/pool.md#flashloansimple): Allows borrower to access liquidity of _single reserve_ for the transaction. In this case flash loan fee is not waived nor can borrower open any debt position at the end of the transaction. This method is gas efficient for those trying take advantage of simple flash loan with single reserve asset.
 
 ### Execution Flow
 
 For developers, a helpful mental model to consider when developing your solution:
 
-1. Your contract calls the `Pool` contract, requesting a Flash Loan of a certain `amount(s)` of `reserve(s)` using [`flashLoanSimple()`](../core-contracts/pool.md#flashloansimple) or [`flashLoan()`](../core-contracts/pool.md#flashloan).
+1. Your contract calls the `Pool` contract, requesting a Flash Loan of a certain `amount(s)` of `reserve(s)` using [`flashLoanSimple()`](../../core-contracts/core-contracts/pool.md#flashloansimple) or [`flashLoan()`](../../core-contracts/core-contracts/pool.md#flashloan).
 2. After some sanity checks, the `Pool` transfers the requested `amounts` of the `reserves` to your contract, then calls `executeOperation()` on `receiver` contract .
 3. Your contract, now holding the flash loaned `amount(s)`, executes any arbitrary operation in its code.
    * If you are performing a **flashLoanSimple**, then when your code has finished, you approve Pool for flash loaned amount + fee.
@@ -37,7 +37,7 @@ Spark Protocol Flash Loans are already used with Spark Protocol for liquidity sw
 
 ### Flash loan fee
 
-The flash loan fee is initialized at deployment to 0.09% and can be updated via Governance Vote. Use [`FLASHLOAN_PREMIUM_TOTAL`](../core-contracts/pool.md#flashloan\_premium\_total) to get current value.
+The flash loan fee is initialized at deployment to 0.09% and can be updated via Governance Vote. Use [`FLASHLOAN_PREMIUM_TOTAL`](../../core-contracts/core-contracts/pool.md#flashloan\_premium\_total) to get current value.
 
 Flashloan fee can be shared by the LPs (liquidity providers) and the protocol treasury. The `FLASHLOAN_PREMIUM_TOTAL` represents the total fee paid by the borrowers of which:
 
@@ -62,7 +62,7 @@ To call either of the two flash loan methods on the Pool, we need to pass in the
 
 1.  **From an EOA ('normal' ethereum account)**
 
-    To use an EOA, send a transaction to the relevant `Pool` calling the `flashLoan()` or `flashLoanSimple()` function. See [Pool api docs](../core-contracts/pool.md) for parameter details, ensuring you use your contract address from [step 1](flash-loans.md#1.-setting-up) for the `receiverAddress`.\\
+    To use an EOA, send a transaction to the relevant `Pool` calling the `flashLoan()` or `flashLoanSimple()` function. See [Pool api docs](../../core-contracts/core-contracts/pool.md) for parameter details, ensuring you use your contract address from [step 1](flash-loans.md#1.-setting-up) for the `receiverAddress`.\\
 2.  **From a different contract**
 
     Similar to sending a transaction from an EOA as above, ensure the `receiverAddress` is your contract address from [step 1](flash-loans.md#1.-setting-up).\\

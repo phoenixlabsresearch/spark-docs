@@ -10,10 +10,10 @@ The [Spark Protocol Utilities SDK](https://github.com/marsfoundation/spark-utili
 
 #### AggregatedReserveIncentiveData
 
-| Name            | Type          | Description                                                                                               |
-| --------------- | ------------- | --------------------------------------------------------------------------------------------------------- |
-| underlyingAsset | address       | Address of the asset supplied/borrowed in Pool                                                            |
-| aIncentiveData  | IncentiveData | Details of rewards distributed for supplying to Spark Protocol Pool i.e. rewards for spToken holders.                |
+| Name            | Type          | Description                                                                                                         |
+| --------------- | ------------- | ------------------------------------------------------------------------------------------------------------------- |
+| underlyingAsset | address       | Address of the asset supplied/borrowed in Pool                                                                      |
+| aIncentiveData  | IncentiveData | Details of rewards distributed for supplying to Spark Protocol Pool i.e. rewards for spToken holders.               |
 | vIncentiveData  | IncentiveData | Details of rewards distributed for variable debt borrowed from Spark Protocol Pool i.e. rewards for vToken holders. |
 | sIncentiveData  | IncentiveData | Details of rewards distributed for stable debt borrowed from Spark Protocol Pool i.e. rewards for sToken holders.   |
 
@@ -43,12 +43,12 @@ The [Spark Protocol Utilities SDK](https://github.com/marsfoundation/spark-utili
 
 #### UserReserveIncentiveData
 
-| Name                     | Type              | Description                                                                                             |
-| ------------------------ | ----------------- | ------------------------------------------------------------------------------------------------------- |
-| underlyingAsset          | address           | Address of the asset supplied/borrowed in Pool                                                          |
-| spTokenIncentivesUserData | UserIncentiveData | Details of user rewards received for supplying to Spark Protocol Pool i.e. rewards for spToken.                    |
-| vTokenIncentivesUserData | UserIncentiveData | Details of user rewards received for borrowing at variable rate from Spark Protocol Pool i.e. rewards for vToken. |
-| sTokenIncentivesUserData | UserIncentiveData | Details of user rewards received for borrowing at stable rate from Spark Protocol Pool i.e. rewards for sToken.   |
+| Name                      | Type              | Description                                                                                                       |
+| ------------------------- | ----------------- | ----------------------------------------------------------------------------------------------------------------- |
+| underlyingAsset           | address           | Address of the asset supplied/borrowed in Pool                                                                    |
+| spTokenIncentivesUserData | UserIncentiveData | Details of user rewards received for supplying to Spark Protocol Pool i.e. rewards for spToken.                   |
+| vTokenIncentivesUserData  | UserIncentiveData | Details of user rewards received for borrowing at variable rate from Spark Protocol Pool i.e. rewards for vToken. |
+| sTokenIncentivesUserData  | UserIncentiveData | Details of user rewards received for borrowing at stable rate from Spark Protocol Pool i.e. rewards for sToken.   |
 
 #### UserIncentiveData
 
@@ -77,7 +77,7 @@ The [Spark Protocol Utilities SDK](https://github.com/marsfoundation/spark-utili
 
 `function getReservesIncentivesData(IPoolAddressesProvider provider)`
 
-Returns `AggregatedReserveIncentiveData[]` for the pool associated with given [`provider`](../core-contracts/pooladdressesprovider.md).
+Returns `AggregatedReserveIncentiveData[]` for the pool associated with given [`provider`](../core-contracts/core-contracts/pooladdressesprovider.md).
 
 #### getUserReservesIncentivesData
 
@@ -89,10 +89,12 @@ Returns `UserReserveIncentiveData[]` for the given `user` for the pool associate
 
 `function getFullReservesIncentiveData(IPoolAddressesProvider provider, address user)`
 
-Returns both `AggregatedReserveIncentiveData[]` and `UserReserveIncentiveData[]` for the given `user` for the pool associated with given [`provider`](../core-contracts/pooladdressesprovider.md).
+Returns both `AggregatedReserveIncentiveData[]` and `UserReserveIncentiveData[]` for the given `user` for the pool associated with given [`provider`](../core-contracts/core-contracts/pooladdressesprovider.md).
 
 ## ABI
+
 <details>
+
 <summary>UiIncentiveDataProviderV3 ABI</summary>
 
 ```
@@ -1057,4 +1059,5 @@ Returns both `AggregatedReserveIncentiveData[]` and `UserReserveIncentiveData[]`
     }
 ]
 ```
+
 </details>
