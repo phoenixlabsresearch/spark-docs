@@ -23,7 +23,7 @@ Returns the price of the supported `asset` in `BASE_CURRENCY` of the Spark Proto
 Return Value
 
 | Type    | Description                                         |
-| ------- |-----------------------------------------------------|
+| ------- | --------------------------------------------------- |
 | uint256 | Price in BASE\_CURRENCY of the Spark market in wei. |
 
 #### getAssetsPrices
@@ -40,8 +40,8 @@ Call Params
 
 Return Value
 
-| Type       | Description                                         |
-| ---------- | --------------------------------------------------- |
+| Type       | Description                                          |
+| ---------- | ---------------------------------------------------- |
 | uint256\[] | Prices in BASE\_CURRENCY of the Spark market in wei. |
 
 #### getSourceOfAsset
@@ -92,7 +92,9 @@ Call Params
 | fallbackOracle | address | The address of the fallback oracle. |
 
 ## ABI
+
 <details>
+
 <summary>AaveOracle ABI</summary>
 
 ```
@@ -326,4 +328,5 @@ Call Params
     }
 ]
 ```
+
 </details>

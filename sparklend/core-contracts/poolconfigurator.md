@@ -32,24 +32,20 @@ Call Params
 
     Allows `RISK_ADMIN` and `POOL_ADMIN` to add/update cap on the total borrow that can be borrowed from the reserve. Once the borrow cap is reached, no more borrow (variable or stable) for the given reserve asset can be initiated.
 
-    | Param Name   | Type    | Description                                                      |
-    | ------------ | ------- | ---------------------------------------------------------------- |
-    | asset        | address | Address of the underlying asset.                                 |
-    | newBorrowCap | uint256 | <p>Borrow cap in whole tokens.<br>borrowCap == 0 => no cap |</p> |
-
-
+    | Param Name   | Type    | Description                                                    |
+    | ------------ | ------- | -------------------------------------------------------------- |
+    | asset        | address | Address of the underlying asset.                               |
+    | newBorrowCap | uint256 | <p>Borrow cap in whole tokens.<br>borrowCap == 0 => no cap</p> |
 *   setSupplyCap
 
     `setSupplyCap (asset, newSupplyCap)`
 
     Allows `RISK_ADMIN` and `POOL_ADMIN` to add/update liquidity supply cap on the reserve. Once the supply cap is reached, no more liquidity for the given reserve asset can be supplied to the pool.
 
-    | Param Name   | Type    | Description                                                      |
-    | ------------ | ------- | ---------------------------------------------------------------- |
-    | asset        | address | Address of the underlying asset.                                 |
-    | newSupplyCap | uint256 | <p>Supply cap in whole tokens.<br>supplyCap == 0 => no cap |</p> |
-
-
+    | Param Name   | Type    | Description                                                    |
+    | ------------ | ------- | -------------------------------------------------------------- |
+    | asset        | address | Address of the underlying asset.                               |
+    | newSupplyCap | uint256 | <p>Supply cap in whole tokens.<br>supplyCap == 0 => no cap</p> |
 * setLiquidationProtocolFee
 *   setEModeCategory
 
@@ -65,8 +61,6 @@ Call Params
     | liquidationBonus     | uint16  | Liquidation bonus for given eMode categoryId                                               |
     | oracle               | address | Address of custom price oracle for category                                                |
     | label                | string  | Custom label for the category                                                              |
-
-    &#x20;
 *   setAssetEModeCategory
 
     `setAssetEModeCategory(address asset, uint8 categoryId)`
@@ -97,7 +91,9 @@ Call Params
 * updateFlashloanPremiumToProtocol
 
 ## ABI
+
 <details>
+
 <summary>PoolConfigurator ABI</summary>
 
 ```
@@ -1356,4 +1352,5 @@ Call Params
     }
 ]
 ```
+
 </details>

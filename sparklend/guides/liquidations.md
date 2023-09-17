@@ -1,12 +1,12 @@
 # Liquidations
 
-The health of the Spark Protocol is dependent on the 'health' of the collateralised positions within the protocol, also known as the 'health factor'. When the 'health factor' of an account's total loans is below 1, anyone can make a `liquidationCall()` to the [`Pool`](../../core-contracts/core-contracts/pool.md#liquidationcall) contract, pay back part of the debt owed and receive discounted collateral in return (also known as the liquidation bonus).
+The health of the Spark Protocol is dependent on the 'health' of the collateralised positions within the protocol, also known as the 'health factor'. When the 'health factor' of an account's total loans is below 1, anyone can make a `liquidationCall()` to the [`Pool`](../core-contracts/pool.md#liquidationcall) contract, pay back part of the debt owed and receive discounted collateral in return (also known as the liquidation bonus).
 
 This incentivises third parties to participate in the health of the overall protocol, by acting in their own interest (to receive the discounted collateral) and as a result, ensure borrows are sufficiently collateralize.
 
 There are multiple ways to participate in liquidations:
 
-1. By calling the liquidationCall() directly in the [Pool](../../core-contracts/core-contracts/pool.md#liquidationcall) contract.
+1. By calling the liquidationCall() directly in the [Pool](../core-contracts/pool.md#liquidationcall) contract.
 2. By creating your own automated bot or system to liquidate loans.
 
 {% hint style="warning" %}
@@ -43,7 +43,7 @@ Only user accounts that have HF < 1 can be liquidated. There are multiple ways y
 
 1. To gather user account data from on-chain data, one way would be to monitor emitted events from the protocol and keep an up to date index of user data locally.
    1. Events are emitted each time a user interacts with the protocol (supply, borrow, repay, withdraw etc.)
-2. When you have the user's address, you can simply call [`getUserAccountData()`](../../core-contracts/core-contracts/pool.md#getuseraccountdata), to read the user's current healthFactor. If the HF < 1, then the account can be liquidated.
+2. When you have the user's address, you can simply call [`getUserAccountData()`](../core-contracts/pool.md#getuseraccountdata), to read the user's current healthFactor. If the HF < 1, then the account can be liquidated.
 
 ### GraphQL
 
@@ -56,7 +56,7 @@ Messari subgraph: [The Graph Hosted Service](https://thegraph.com/hosted-service
 
 Once you have the account(s) to liquidate, you will need to calculate the amount of collateral that can be liquidated:
 
-1. Use [`getUserReserveData()`](../../periphery-contracts/uipooldataproviderv3.md#getuserreservesdata)
+1. Use [`getUserReserveData()`](../periphery-contracts/uipooldataproviderv3.md#getuserreservesdata)
 2. Max debt that be cleared by single liquidation call is given by the `DEFAULT_LIQUIDATION_CLOSE_FACTOR`(when `CLOSE_FACTOR_HF_THRESHOLD < HF < 1`) or `MAX_LIQUIDATION_CLOSE_FACTOR` (when `HF < CLOSE_FACTOR_HF_THRESHOLD`)
    1. `debtToCover = (userStableDebt + userVariableDebt) * LiquidationCloseFactor`
    2. You can pass `uint(-1)`, i.e. `MAX_UINT`, as the `debtToCover` to liquidate the maximum amount allowed.

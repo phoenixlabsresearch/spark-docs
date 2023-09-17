@@ -79,7 +79,9 @@ Call Params
 | newGracePeriod | uint256 | duration of new grace period in seconds. |
 
 ## ABI
+
 <details>
+
 <summary>PriceOracleSentinel ABI</summary>
 
 ```
@@ -224,4 +226,5 @@ Call Params
     }
 ]
 ```
+
 </details>

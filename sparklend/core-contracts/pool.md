@@ -191,7 +191,7 @@ Call Params
 Sets the `asset` of `msg.sender` to be used as collateral or not.
 
 {% hint style="info" %}
-An asset in [Isolation Mode](../../features/isolation-mode.md#isolation-mode) can be enabled to use as collateral only if no other asset is already enabled to use as collateral.
+An asset in [Isolation Mode](../features/isolation-mode.md#isolation-mode) can be enabled to use as collateral only if no other asset is already enabled to use as collateral.
 {% endhint %}
 
 {% hint style="info" %}

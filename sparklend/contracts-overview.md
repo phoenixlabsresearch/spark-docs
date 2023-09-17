@@ -19,19 +19,19 @@ Core protocol contracts fall in following 4 categories:
 
 ### Configuration
 
-#### [ACLManager](../core-contracts/core-contracts/aclmanager.md)
+#### [ACLManager](core-contracts/aclmanager.md)
 
 Spark Protocol implements an access control list to segregate powers and/or benefits that can be allocated to different entities on the protocol. The roles and holders are managed in the [`ACLManager.sol`](https://github.com/marsfoundation/sparklend/blob/master/contracts/protocol/configuration/ACLManager.sol), which keeps track of the individual roles and its holders.
 
-#### [PoolAddressesProvider](../core-contracts/core-contracts/pooladdressesprovider.md)
+#### [PoolAddressesProvider](core-contracts/pooladdressesprovider.md)
 
 The main addresses register of the protocol, containing address of _core protocol contracts_ and _ACL admin_. It acts as factory of proxies and admin of those. The owner of this contract has the right to set/update implementation of the upgradable contracts. The latest contract addresses should be retrieved from this contract by making the appropriate calls.
 
-#### [PoolAddressesProviderRegistry](../core-contracts/core-contracts/pooladdressesproviderregistry.md)
+#### [PoolAddressesProviderRegistry](core-contracts/pooladdressesproviderregistry.md)
 
 Contains a list of active `PoolAddressProvider` addresses, for different markets. It is used for indexing all Spark protocol’s markets.
 
-#### [PriceOracleSentinel](../core-contracts/core-contracts/priceoraclesentinel.md)
+#### [PriceOracleSentinel](core-contracts/priceoraclesentinel.md)
 
 Oracle Sentinel validates if operations are allowed depending on the PriceOracle health. Once the _PriceOracle_ gets up after an outage/downtime, users can make their positions healthy during a grace period.
 
@@ -43,29 +43,29 @@ Implements the calculation of the interest rates depending on the reserve state.
 
 Each contract stores the optimised base curves using the corresponding parameters of each asset. This means that there is a mathematical function which determines the yield of each liquidity pool, with the yield changing based on the amount of borrowed funds and the total liquidity (i.e. utilisation) of the pool.
 
-#### [Pool](../core-contracts/core-contracts/pool.md)
+#### [Pool](core-contracts/pool.md)
 
 The main entry point into the Spark Protocol. Most user interactions with the Spark Protocol occur via the Pool contract. Pool is owned by the PoolAddressesProvider of the specific market. All admin functions are callable by the PoolConfigurator contract, which is defined in PoolAddressesProvider.
 
-#### [PoolConfigurator](../core-contracts/core-contracts/poolconfigurator.md)
+#### [PoolConfigurator](core-contracts/poolconfigurator.md)
 
 Provider configuration methods for the Pool contract. The write methods of this contract can only be called by addresses with corresponding permission-ed system roles that are managed by ACLManager.
 
 ### Tokenization
 
-#### [SpToken](../tokens/sptoken.md)
+#### [SpToken](tokens/sptoken.md)
 
 Yield-generating tokens that are minted and burnt upon supply and withdraw of assets to Spark Pool
 
-#### [DelegationAwareSpToken](../tokens/delegationawaresptoken.md)
+#### [DelegationAwareSpToken](tokens/delegationawaresptoken.md)
 
 The special type of spToken that are minted and burnt upon supply and withdraw of assets that has voting power associated (which can be delegated) with them.
 
-#### [StableDebtToken](../tokens/debttoken.md)
+#### [StableDebtToken](tokens/debttoken.md)
 
 The non-transferable interest accruing, stable rate tokenised borrows.
 
-#### [VariableDebtToken](../tokens/debttoken.md)
+#### [VariableDebtToken](tokens/debttoken.md)
 
 The non-transferable interest accruing, variable rate tokenised borrows.
 

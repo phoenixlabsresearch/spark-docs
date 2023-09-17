@@ -41,19 +41,19 @@ Info data struct for base currency of the Spark Protocol market.
 
 `function getReservesList(IPoolAddressesProvider provider)`
 
-Returns the list of initialised reserves in the Pool associated with the given [`provider`](../core-contracts/core-contracts/pooladdressesprovider.md).
+Returns the list of initialised reserves in the Pool associated with the given [`provider`](../core-contracts/pooladdressesprovider.md).
 
 ### getReservesData
 
 `function getReservesData(IPoolAddressesProvider provider)`
 
-Returns `BaseCurrencyInfo` of the Pool and `AggregatedReserveData[]` for all the initialised reserves in the Pool associated with the given [`provider`](../core-contracts/core-contracts/pooladdressesprovider.md).
+Returns `BaseCurrencyInfo` of the Pool and `AggregatedReserveData[]` for all the initialised reserves in the Pool associated with the given [`provider`](../core-contracts/pooladdressesprovider.md).
 
 ### getUserReservesData
 
 `function getUserReservesData(IPoolAddressesProvider provider, address user)`
 
-Returns `UserReserveData[]` for all user reserves in the Pool associated with the given [`provider`](../core-contracts/core-contracts/pooladdressesprovider.md).
+Returns `UserReserveData[]` for all user reserves in the Pool associated with the given [`provider`](../core-contracts/pooladdressesprovider.md).
 
 ## ABI
 
