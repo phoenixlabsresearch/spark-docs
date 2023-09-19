@@ -3,12 +3,12 @@
 This feature allow assets with potentially manipulatable oracles (for example illiquid Uni V3 pairs) to be listed on Spark Protocol as single borrow asset i.e. if user borrows siloed asset, they cannot borrow any other asset. This helps mitigating the risk associated with such assets from impacting the overall solvency of the protocol.
 
 {% hint style="info" %}
-[Risk or Pool admin](../core-contracts/aclmanager.md#roles), selected by Maker Governance, can call [`setSiloedBorrowing`](../core-contracts/poolconfigurator.md#setsiloedborrowing) to set an asset in _Siloed Borrowing_ mode.
+[Risk or Pool admin](../contracts/core-contracts/aclmanager.md#roles), selected by Maker Governance, can call [`setSiloedBorrowing`](../contracts/core-contracts/poolconfigurator.md#setsiloedborrowing) to set an asset in _Siloed Borrowing_ mode.
 {% endhint %}
 
 ## Supply Siloed Assets
 
-A user can supply S\_iloed Asset\_ just like any other asset using [`supply()`](../core-contracts/pool.md#supply) method in `pool.sol`, though, the asset will not be enabled to use as collateral i.e. supplied amount will not add to total collateral balance of the user.
+A user can supply S\_iloed Asset\_ just like any other asset using [`supply()`](../contracts/core-contracts/pool.md#supply) method in `pool.sol`, though, the asset will not be enabled to use as collateral i.e. supplied amount will not add to total collateral balance of the user.
 
 ### Borrow Siloed Assets
 
@@ -16,7 +16,7 @@ A user can supply S\_iloed Asset\_ just like any other asset using [`supply()`](
 User borrowing a _siloed asset_ will \_ **not**\_ be allowed to \_\_ borrow \_\_ any other asset\_.\_
 {% endhint %}
 
-User can borrow _Siloed Assets_ using [`borrow()`](../core-contracts/pool.md#borrow) method in `pool.sol` , only if:
+User can borrow _Siloed Assets_ using [`borrow()`](../contracts/core-contracts/pool.md#borrow) method in `pool.sol` , only if:
 
 * It is first borrow onBehalf of the address
 

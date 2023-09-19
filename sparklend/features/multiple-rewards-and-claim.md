@@ -6,7 +6,7 @@ Spark Protocol offers the option to have _**multiple rewards**_ per token depend
 
 Spark Protocol also allows a user to claim rewards to another account as well as self and to claim multiple types of rewards per asset in single tx.
 
-The [RewardsController](../periphery-contracts/rewardscontroller.md) contract is the main contract where the user interacts to claim the rewards of their positions. The users can claim all the rewards or an individual reward per transaction, with a variety of functions that allow more granularity at claim.
+The [RewardsController](../contracts/periphery-contracts/rewardscontroller.md) contract is the main contract where the user interacts to claim the rewards of their positions. The users can claim all the rewards or an individual reward per transaction, with a variety of functions that allow more granularity at claim.
 
 ## Integration Guide
 
@@ -47,7 +47,7 @@ Claim one or all type of rewards _to self_, _another address_ or _onBehalf of an
 User can claim one or all type of rewards using `claimRewardsToSelf()` and `claimAllRewardsToSelf()` respectively for the list of assets passed to the method.
 
 {% hint style="info" %}
-The `msg.sender` must match the user's address that has accrued the rewards.&#x20;
+The `msg.sender` must match the user's address that has accrued the rewards.
 {% endhint %}
 
 ```tsx

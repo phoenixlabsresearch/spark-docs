@@ -57,11 +57,6 @@
 
 * [Conduits Overview](conduits/conduits-overview.md)
 
-## 🏘 Maker
-
-* [Maker Overview](maker/maker-overview.md)
-* [Maker Technical Docs](https://docs.makerdao.com/)
-
 ## Deployed Contracts
 
 * [Deployed Contracts Overview](deployed-contracts/deployed-contracts-overview.md)
