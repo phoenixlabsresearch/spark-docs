@@ -53,8 +53,8 @@ For example, metamask or trust wallet have both the options to cancel or speed u
 
 Alternatively, if your wallet provider doesn't have this option, you can still drop the stuck transaction by sending a 0 ETH transaction, to your address (to yourself) using the same nonce (number id). You can inspect the nonce in your transaction in [Etherscan](https://etherscan.io) and use interfaces such as [MEW](https://www.myetherwallet.com/) and [MyCrypto ](https://mycrypto.com/)to send this transaction with a higher gas cost and replace the one that is stuck.
 
-Here are a couple of guides about the topic for [MEW ](https://kb.myetherwallet.com/en/transactions/checking-or-replacing-a-tx-after-sending/) and [MyCrypto](https://support.mycrypto.com/how-to/sending/checking-or-replacing-a-transaction-after-it-has-been-sent).
+Here are a couple of guides about the topic for [MEW ](https://kb.myetherwallet.com/en/transactions/checking-or-replacing-a-tx-after-sending/)and [MyCrypto](https://support.mycrypto.com/how-to/sending/checking-or-replacing-a-transaction-after-it-has-been-sent).
 
 {% hint style="info" %}
-If you still have any questions or issues, feel free to reach the Spark team over the official [discord ](https://discord.gg/xztPSuEP).
+If you still have any questions or issues, feel free to reach the Spark team over the official [discord](https://discord.gg/sparkdao).
 {% endhint %}
