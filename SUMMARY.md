@@ -56,6 +56,7 @@
 ## 🚇 Conduits
 
 * [Conduits Overview](conduits/conduits-overview.md)
+* [Spark Conduit ⚡](conduits/spark-conduit.md)
 
 ## Deployed Contracts
 
