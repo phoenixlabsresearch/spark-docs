@@ -14,7 +14,7 @@ To interact with test markets make sure you toggle the **Testnet mode** _on_. Th
 
 First, you’ll need to add the test network to your wallet. You can directly add networks to your browser wallet with [Chainlist](https://chainlist.org).
 
-Next, you’ll need to faucet some base currency for the test network to pay gas for transactions. Here are links to available faucets (not operated or affiliated with Spark Protocol): TODO - add faucets & check https://app.sparkprotocol.io/faucet/
+Next, you’ll need to faucet some base currency for the test network to pay gas for transactions. You can find a list of different faucet tokens at [app.sparkprotocol.io/faucet](https://app.sparkprotocol.io/faucet/).
 
 Each testnet market has a custom set of assets which can be fauceted from the Spark Protocol faucet. To access the faucet interface: switch to the market which you want to test, be sure your wallet is connected to the correct network and _testnet mode_ is on. The faucet link is available at bottom of the supply column in _Dashboard_ or you can manually update url to `https://app.sparkprotocol.io/faucet/`.
 
