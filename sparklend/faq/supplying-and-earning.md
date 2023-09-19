@@ -37,5 +37,5 @@ Yes. After supplying your assets, you are able to unselect the asset so that it 
 \* You can withdraw your assets without opting out of using them as collateral, as long as those funds are not actively being used to borrow and the withdrawal would cause a liquidation on your loans.
 
 {% hint style="info" %}
-If you still have any questions or issues, feel free to reach the Spark team over the official [discord ](https://discord.gg/BvfMGCvfzJ).
+If you still have any questions or issues, feel free to reach the Spark team over the official [discord ](https://discord.gg/sparkdao).
 {% endhint %}

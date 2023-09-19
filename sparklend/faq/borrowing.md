@@ -49,5 +49,5 @@ In order to payback the loan you simply go to the Borrowings section of your das
 In order to avoid the reduction of your health factor leading to liquidation, you can repay the loan or deposit more assets in order to increase your health factor. Out of these two available options, repaying the loan would increase your health factor more.
 
 {% hint style="info" %}
-If you still have any questions or issues, feel free to reach the Spark team over the official [discord](https://discord.gg/BvfMGCvfzJ).
+If you still have any questions or issues, feel free to reach the Spark team over the official [discord](https://discord.gg/sparkdao).
 {% endhint %}
