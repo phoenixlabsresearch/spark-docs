@@ -32,7 +32,3 @@ For example, when a reserve is not frozen or paused, if the reserve is `active`,
 | spToken Transfer          |        |        | No     |                   |                          |
 
 The role `emergencyAdmin` can pause a specific reserve.
-
-## Currently Frozen
-
-There are currently no frozen markets or reserves.
