@@ -102,7 +102,7 @@ The `**IAllocatorConduit**` acts as a mediator between subDAOs (Allocators) and 
 * `Ilk`: Unique identifier that is used to identify an AllocatorDAO.
 * `Allocator Vault`: Smart contract that deploys can mint NST/DAI on behalf of an AllocatorDAO and move it as desired.
 * `Router`: Smart contract that facilitates the movement of funds between different strategies. Controlled by the `Allocator Vault`.
-* `Arranger`: Third-party arranger that will use deployed capital to generate yield. (Monetalis, Blocktower, Coinbase Custody)
+* `Arranger`: Third-party entity responsible for making use of the deployed capital to generate yield. (e.g. Monetalis, Blocktower)
 * `Conduit`: Smart contract that moves funds back and forth from multiple `Router` contracts to a single `Arranger` according to codified and pre-defined rules.
 * `subDAO`: entity responsible for allocating capital
 * `Arranger`: entity responsible for the execution of the investment
