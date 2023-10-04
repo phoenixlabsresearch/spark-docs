@@ -105,7 +105,6 @@ The `**IAllocatorConduit**` acts as a mediator between subDAOs (Allocators) and 
 * `Arranger`: Third-party entity responsible for making use of the deployed capital to generate yield. (e.g. Monetalis, Blocktower)
 * `Conduit`: Smart contract that moves funds back and forth from multiple `Router` contracts to a single `Arranger` according to codified and pre-defined rules.
 * `subDAO`: entity responsible for allocating capital
-* `Arranger`: entity responsible for the execution of the investment
 
 ![Untitled](../.gitbook/assets/1.png)
 
