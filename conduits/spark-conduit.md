@@ -1,8 +1,6 @@
 # Spark Conduit ⚡
 
-![Foundry CI](https://github.com/marsfoundation/spark-conduits/actions/workflows/ci.yml/badge.svg) [![Foundry](https://img.shields.io/badge/Built%20with-Foundry-FFDB1C.svg)](https://getfoundry.sh/) [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://github.com/marsfoundation/spark-conduits/blob/master/LICENSE)
-
-{% embed url="https://github.com/marsfoundation/spark-conduits" %}
+### [Github repo](https://github.com/marsfoundation/spark-conduits)
 
 ### Overview
 
