@@ -61,6 +61,7 @@
 ## Deployed Contracts
 
 * [Deployed Contracts Overview](deployed-contracts/deployed-contracts-overview.md)
-* [Ethereum Mainnet Addresses](deployed-contracts/mainnet-addresses.md)
-* [Ethereum Testnet Addresses](deployed-contracts/testnet-addresses.md)
+* [Ethereum Addresses](deployed-contracts/mainnet-addresses.md)
+* [Gnosis Chain Addresses](deployed-contracts/gnosis-addresses.md)
+* [Goerli Addresses](deployed-contracts/testnet-addresses.md)
 * [Security & Audits](deployed-contracts/security-and-audits.md)

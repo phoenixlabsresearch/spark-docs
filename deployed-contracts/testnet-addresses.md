@@ -3,7 +3,8 @@
 The Spark Protocol is available on Ethereum Goerli testnet.
 
 {% hint style="warning" %}
-For assets on testnets, we use different versions of the token (e.g. testnet Dai) which are mintableERC20. This is to ensure enough liquidity for our reserves and to easily mint more tokens when needed.
+Goerli testnet is no longer supported.
+As of October 4th, new changes to the protocol are not reflected Goerli, run a local fork of mainnet instead.
 {% endhint %}
 
 {% tabs %}

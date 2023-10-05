@@ -1,8 +1,8 @@
-# Mainnet Addresses
+# Ethereum Addresses
 
-The Spark Protocol is available on Ethereum mainnet.
+The Spark Protocol is available on Ethereum and Gnosis Chain.
 
-## Mainnet Addresses
+## Ethereum Addresses
 
 {% tabs %}
 {% tab title="All Addresses" %}
