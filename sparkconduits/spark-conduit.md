@@ -1,15 +1,15 @@
-# Spark Conduit ⚡
+# SparkLend Conduit
 
 ### [Github repo](https://github.com/marsfoundation/spark-conduits)
 
 ### Overview
 
-The Spark Conduit is a conduit contract designed to be used within the Maker Allocation System. It implements the IAllocatorConduit interface, so it will be able to work within the constraints on the Allocation System design. There are two contracts in this repo:
+The SparkLend Conduit is a conduit contract designed to be used within the Maker Allocation System. It implements the IAllocatorConduit interface, so it will be able to work within the constraints on the Allocation System design. There are two contracts in this repo:
 
 1. `SparkConduit`: Facilitates the movement of funds between the Maker Allocation System and the SparkLend protocol.
 2. `DaiInterestRateStrategy`: Calculates the interest rate that is to be paid by all borrowers of DAI through the SparkLend protocol.
 
-In later iterations of this code's development, it is expected for other Spark Conduits to be developed to support multichain deployments.
+In later iterations of this code's development, it is expected for other SparkLend Conduits to be developed to support multichain deployments.
 
 ### Roles/Permissions
 
@@ -87,7 +87,7 @@ $$getTotalDeposits(asset) \le aToken.balanceOf(conduit)$$
 
 ### Upgradeability
 
-Since the Spark Conduit will likely require maintenance as its desired usage evolves, it will be an upgradeable contract, using [`upgradeable-proxy`](https://github.com/marsfoundation/upgradeable-proxy) for upgradeable logic. This is a non-transparent proxy contract that gives upgrade rights to the PauseProxy.
+Since the SparkLend Conduit will likely require maintenance as its desired usage evolves, it will be an upgradeable contract, using [`upgradeable-proxy`](https://github.com/marsfoundation/upgradeable-proxy) for upgradeable logic. This is a non-transparent proxy contract that gives upgrade rights to the PauseProxy.
 
 ### `DaiInterestRateStrategy`
 
