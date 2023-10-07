@@ -52,10 +52,10 @@
 * [sDAI Overview](sdai/sdai-overview.md)
 * [Technical Docs](sdai/technical-docs.md)
 
-## 🚇 Conduits
+## 🚇 SparkConduits
 
-* [Conduits Overview](conduits/conduits-overview.md)
-* [Spark Conduit ⚡](conduits/spark-conduit.md)
+* [SparkConduits Overview](sparkconduits/conduits-overview.md)
+* [SparkLend Conduit](sparkconduits/spark-conduit.md)
 
 ## Deployed Contracts
 
