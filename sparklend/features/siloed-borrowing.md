@@ -8,7 +8,7 @@ This feature allow assets with potentially manipulatable oracles (for example il
 
 ## Supply Siloed Assets
 
-A user can supply S\_iloed Asset\_ just like any other asset using [`supply()`](../contracts/core-contracts/pool.md#supply) method in `pool.sol`, though, the asset will not be enabled to use as collateral i.e. supplied amount will not add to total collateral balance of the user.
+A user can supply \_Siloed Asset\_ just like any other asset using [`supply()`](../contracts/core-contracts/pool.md#supply) method in `pool.sol`, though, the asset will not be enabled to use as collateral i.e. supplied amount will not add to total collateral balance of the user.
 
 ### Borrow Siloed Assets
 
@@ -46,7 +46,3 @@ User automatically enters siloed borrowing state on their first successful borro
 #### How does user exit siloed borrowing state?
 
 User must repay all their debt to exist siloed borrowing state.
-
-#### Is any asset currently siloed in Spark Protocol market?
-
-Currently there is no asset marked siloed in any of the Spark Protocol markets. Risk or Pool admins can set already listed assets as siloed if needed as per market conditions. This feature can be used for new asset listing which may have higher risk.
